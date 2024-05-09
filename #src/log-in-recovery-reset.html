@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Регистрация"
+})
+
+<body>
+	<div class="wrapper wrapper_log-in">
+		@@include('_header.html',{})
+		@@include('_menu-down.html',{})
+		<main class="page ">
+			<div class="page__container _container">
+				<!-- login	 -->
+				<div class="login">
+					<div class="login__container">
+						<div class="login__decor">
+							<img src="img/log-in/01.png" alt="">
+						</div>
+						<div class="login__body">
+							<a href="#" class="login__logo _logo"><img src="img/logo.svg" alt="">FOODRATE</a>
+							<div class="login__block log-in log-in_registration">
+								<form action="#" class="log-in__recovery recovery-log-in recovery-log-in_gap24">
+									<div class="recovery-log-in__header">
+										<h2 class="recovery-log-in__title">Сброс пароля</h2>
+									</div>
+									<div class="form-log-in__input input">
+										<label for="formqq_1" class="input__label">Email</label>
+										<div class="input__line">
+											<input id="formqq_1" autocomplete="off" type="text" name="form[]" data-error="Некорректный email" data-value="" value="" class="input__value _email _req">
+										</div>
+									</div>
+									<div class="form-log-in__input input input_pass">
+										<label for="formqq_2" class="input__label">Новый пароль</label>
+										<div class="input__line input__line_icon">
+											<input id="formqq_2" autocomplete="off" type="password" name="form[]" data-error="Минимум 8 символов" data-value="" class="input__value _req">
+											<button type="button" class="input__button  _search-button _search-open  _icon-49 _viewpass"></button>
+										</div>
+									</div>
+									<div class="form-log-in__input input input_pass">
+										<label for="formqq_3" class="input__label">Повторите пароль</label>
+										<div class="input__line input__line_icon">
+											<input id="formqq_3" autocomplete="off" type="password" name="form[]" data-error="Минимум 8 символов" data-value="" class="input__value _req">
+											<button type="button" class="input__button  _search-button _search-open  _icon-49 _viewpass"></button>
+										</div>
+									</div>
+									<button type="submit" class="recovery-log-in__button button button_s "><span>Сбросить пароль</span></button>
+								</form>
+							</div>
+							<div class="login__text">Registering to this website, you accept our <a href="#" class="_link">Terms of Use</a> and our <a href="#" class="_link">Privacy Policy</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- login	 -->
+			</div>
+
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

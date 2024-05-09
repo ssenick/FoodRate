@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Обратная связь ok"
+})
+
+<body>
+	<div class="wrapper ">
+		@@include('_header.html',{})
+		@@include('_menu-down.html',{})
+		<main class="page">
+			<div class="page__container _container ">
+				<div class="page__body ">
+					<div class="page__content">
+						<!-- breadcrumb -->
+						<div class="breadcrumb">
+							<ul class="breadcrumb__list">
+								<li><a href="#" class="breadcrumb__item">Главная</a></li>
+								<li><a class="breadcrumb__item">Обратная связь</a></li>
+							</ul>
+						</div>
+						<!-- breadcrumb -->
+						<div class="page__form-container">
+							<div class="page__block">
+								<h1 class="title-block">Ваша заявка отправлена</h1>
+								<!-- feedback -->
+								<div class="feedback">
+									<div class="feedback__message message-feedback">
+										<div class="message-feedback__text _paragraph-2">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et id vulputate nulla velit etiam eget. Pharetra libero nibh urna, ullamcorper at egestas. Facilisis sollicitudin tellus quam quam ut sed diam ut.</p>
+										</div>
+										<button type="button" class="message-feedback__button button button_s">На главную</button>
+										
+									</div>
+								</div>
+								<!-- feedback -->
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

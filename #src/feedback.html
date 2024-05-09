@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Обратная связьы"
+})
+
+<body>
+	<div class="wrapper ">
+		@@include('_header.html',{})
+		@@include('_menu-down.html',{})
+		<main class="page">
+			<div class="page__container _container ">
+				<div class="page__body ">
+					<div class="page__content">
+						<!-- breadcrumb -->
+						<div class="breadcrumb">
+							<ul class="breadcrumb__list">
+								<li><a href="#" class="breadcrumb__item">Главная</a></li>
+								<li><a class="breadcrumb__item">Обратная связь</a></li>
+							</ul>
+						</div>
+						<!-- breadcrumb -->
+						<div class="page__form-container">
+							<div class="page__block">
+								<h1 class="title-block">Обратная связь</h1>
+								<!-- feedback -->
+								<div class="feedback">
+									<form action="#" class="feedback__form form-feedback">
+										<div class="form-feedback__row">
+											<div class="form-feedback__input input">
+												<label for="feedback_1" class="input__label">Имя</label>
+												<div class="input__line">
+													<input id="feedback_1" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Lorem ipsum dolor" value="" class="input__value _req">
+												</div>
+											</div>
+											<div class="form-feedback__input input">
+												<label for="feedback_2" class="input__label">Email</label>
+												<div class="input__line">
+													<input id="feedback_2" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Lorem ipsum dolor " value="" class="input__value _email _req">
+												</div>
+											</div>
+										</div>
+										<div class="form-feedback__input input">
+											<label for="feedback_3" class="input__label">Тема сообщения</label>
+											<div class="input__line ">
+												<input  id="feedback_3" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Lorem ipsum dolor" value="" class="input__value _req">
+											</div>
+										</div>
+										<div class="form-feedback__input input">
+											<label for="feedback_4" class="input__label">О себе</label>
+											<div class="input__line input__line_area input__line_feedback">
+												<textarea id="feedback_4" autocomplete="off" name="form[]" data-value="Lorem ipsum dolor " data-error="Ошибка" class="input__value"></textarea>
+											</div>
+										</div>
+										<div class="form-feedback__footer">
+											<div class="form-feedback__check check">
+												<span class="check__label">Введите код с картинки</span>
+												<div class="check__line">
+													<div class="check__image">
+														<img src="img/check/01.jpg" alt="">
+													</div>
+													<button type="button" class="check__button button button_grey button_s button_icon-only _icon-52"></button>
+												</div>
+											</div>
+											<button type="submit" class="form-feedback__button button button_s "><span>Отправить</span></button>
+										</div>
+
+									</form>
+								</div>
+								<!-- feedback -->
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

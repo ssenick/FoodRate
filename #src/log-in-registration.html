@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Регистрация"
+})
+
+<body>
+	<div class="wrapper wrapper_log-in">
+		@@include('_header.html',{})
+		@@include('_menu-down.html',{})
+		<main class="page ">
+			<div class="page__container _container">
+				<!-- login	 -->
+				<div class="login">
+					<div class="login__container">
+						<div class="login__decor">
+							<img src="img/log-in/01.png" alt="">
+						</div>
+						<div class="login__body">
+							<a href="#" class="login__logo _logo"><img src="img/logo.svg" alt="">FOODRATE</a>
+							<div class="login__block log-in log-in_registration">
+								<div class="log-in__body">
+									<div class="log-in__header header-log-in">
+										<a href="" class="header-log-in__link _active">Регистрация</a>
+										<a href="" class="header-log-in__link">Вход</a>
+									</div>
+									<form action="#" class="log-in__form form-log-in">
+										<div class="form-log-in__input input">
+											<label for="form_1" class="input__label">Email</label>
+											<div class="input__line">
+												<input id="form_1" autocomplete="off" type="text" name="form[]" data-error="Некорректный email" data-value="" value="" class="input__value _email _req">
+											</div>
+										</div>
+										<div class="form-log-in__input input input_pass">
+											<label for="form_2" class="input__label">Пароль</label>
+											<div class="input__line input__line_icon">
+												<input id="form_2" autocomplete="off" type="password" name="form[]" data-error="Минимум 8 символов" data-value="" class="input__value _req">
+												<button type="button" class="input__button  _search-button _search-open  _icon-49 _viewpass"></button>
+											</div>
+										</div>
+										<div class="form-log-in__input input input_pass">
+											<label for="form_3" class="input__label">Повторите пароль</label>
+											<div class="input__line input__line_icon">
+												<input id="form_3" autocomplete="off" type="password" name="form[]" data-error="Минимум 8 символов" data-value="" class="input__value _req">
+												<button type="button" class="input__button  _search-button _search-open  _icon-49 _viewpass"></button>
+											</div>
+										</div>
+										<div class="form-log-in__footer">
+											<button type="submit" class="form-log-in__button button button_s "><span>Зарегистрироваться</span></button>
+										</div>
+									</form>
+									<div class="log-in__bottom">
+										<span class="log-in__text _text-2 _mid-1"><span>или продолжить через соцсети</span></span>
+										<div class="log-in__socials socials">
+											<ul class="socials__list">
+												<li><a href="#" class="socials__item socials__item_f _icon-31"></a></li>
+												<li><a href="#" class="socials__item socials__item_vk _icon-32"></a></li>
+												<li><a href="#" class="socials__item socials__item_goo "><img src="img/icons/svg/google.svg" alt=""></a></li>
+												<li><a href="#" class="socials__item socials__item_ya _icon-47"></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="login__text">Registering to this website, you accept our <a href="#" class="_link">Terms of Use</a> and our <a href="#" class="_link">Privacy Policy</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- login	 -->
+			</div>
+
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

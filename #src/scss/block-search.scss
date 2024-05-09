@@ -1,0 +1,268 @@
+.block-search {
+	// .block-search__body
+	&__body {
+		display: grid;
+		gap: 40px;
+	}
+	// .block-search__header
+	&__header {
+	}
+	// .block-search__title
+	&__title {
+		padding: 0px 30px 0px 0px;
+		&:not(:last-child) {
+			margin: 0px 0px 24px 0px;
+		}
+	}
+	// .block-search__form
+	&__form {
+	}
+	// .block-search__results
+	&__results {
+	}
+	@media (max-width: $md3+px) {
+		&__title {
+			padding: 0px 0px 0px 0px;
+			&:not(:last-child) {
+				margin: 0px 0px 24px 0px;
+			}
+		}
+	}
+}
+.form-block-search {
+	// .form-block-search__input
+	&__input {
+	}
+}
+
+.results-block-search {
+	display: grid;
+	gap: 80px;
+	// .results-block-search__sort
+	&__sort {
+		min-width: 100%;
+	}
+	// .results-block-search__sections
+	&__sections {
+		display: grid;
+		gap: 74px;
+	}
+	// .results-block-search__section
+	&__section {
+	}
+	@media (max-width: $md1+px) {
+		gap: 50px;
+		&__sections {
+			gap: 50px;
+		}
+	}
+	@media (max-width: $md3+px) {
+		gap: 40px;
+		&__sections {
+			gap: 40px;
+		}
+	}
+}
+.section-results {
+	// .section-results__header
+	&__header {
+		display: flex;
+		gap: 32px;
+		border-bottom: 1px solid $light-1;
+	}
+	// .section-results__title
+	&__title {
+		align-self: flex-start;
+		flex: 1 1 auto;
+		padding: 0px 0px 10px 0px;
+	}
+	// .section-results__info
+	&__info {
+		align-self: flex-end;
+		display: flex;
+		align-items: center;
+		gap: 32px;
+		font-weight: 500;
+		padding: 12px 0px 0px 0px;
+	}
+	// .section-results__value
+	&__value {
+		align-self: flex-start;
+	}
+	// .section-results__pagging
+	&__pagging {
+		align-self: flex-end;
+	}
+	// .section-results__items
+	&__items {
+		padding: 24px 0px 0px 0px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 30px;
+		row-gap: 28px;
+	}
+	// .section-results__item
+	&__item {
+	}
+	@media (max-width: $md1+px) {
+		&__items {
+			grid-template-columns: 1fr;
+		}
+	}
+	@media (max-width: $md3+px) {
+		&__header {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+		&__info {
+			align-self: flex-start;
+		}
+	}
+}
+.pagging-results {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	font-weight: 500;
+	padding-bottom: 24px;
+	// .pagging-results__item
+	&__item {
+	}
+	// .pagging-results__link
+	&__link {
+		color: $mid-1;
+		position: relative;
+		@extend ._hover;
+		&._active {
+			color: $dark-1;
+			&::before {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 4px;
+				top: calc(100% + 24px);
+				left: 0;
+
+				background-color: $main;
+			}
+		}
+	}
+}
+
+.item-section-results {
+	display: flex;
+	align-items: flex-start;
+	// .item-section-results__pictures
+	&__pictures {
+		position: relative;
+		height: 124px;
+		flex: 0 0 160px;
+	}
+	// .item-section-results__picture
+	&__picture {
+		position: absolute;
+		width: 100%;
+		height: 120px;
+		top: 0;
+		left: 0;
+		border-radius: 12px;
+		overflow: hidden;
+		&:nth-child(1) {
+			z-index: 2;
+		}
+		&:nth-child(2) {
+			z-index: 1;
+			opacity: 0.5;
+			filter: blur(14px);
+			transform: translate(0px, 4px);
+		}
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+		}
+	}
+	// .item-section-results__content
+	&__content {
+		padding: 0px 10px 0px 30px;
+	}
+	// .item-section-results__label
+	&__label {
+		display: inline-block;
+		color: inherit;
+		&:not(:last-child) {
+			margin: 0px 0px 10px 0px;
+		}
+		span {
+			color: $main;
+		}
+	}
+	// .item-section-results__breadcrumb
+	&__breadcrumb {
+		&:not(:last-child) {
+			margin: 0px 0px 16px 0px;
+		}
+	}
+	// .item-section-results__desc
+	&__desc {
+		color: $dark-2;
+	}
+	@media (max-width: $md3+px) {
+		flex-direction: column;
+		gap: 24px;
+		&__pictures {
+			position: relative;
+			width: 100%;
+			flex: 0 0 184px;
+		}
+		&__picture {
+			position: absolute;
+			width: 100%;
+			height: 180px;
+		}
+		&__content {
+			padding: 0px 0px 0px 0px;
+		}
+		&__breadcrumb {
+			&:not(:last-child) {
+				margin: 0px 0px 1px 0px;
+			}
+		}
+	}
+}
+
+.results-breadcrumb {
+	// .results-breadcrumb__list
+	&__list {
+		display: flex;
+		align-items: center;
+		row-gap: 5px;
+		column-gap: 19px;
+		li {
+			position: relative;
+			&:not(:last-child) {
+				&::before {
+					content: "";
+					position: absolute;
+					top: 50%;
+					left: calc(100% + 9px);
+					transform: translate(-50%, -50%);
+					width: 3px;
+					height: 3px;
+					border-radius: 50%;
+					background-color: $mid-2;
+				}
+			}
+		}
+	}
+	// .results-breadcrumb__item
+	&__item {
+		color: inherit;
+		@extend ._hover;
+		@extend ._text-2;
+	}
+}

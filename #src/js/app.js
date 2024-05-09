@@ -1,0 +1,11 @@
+@@include('files/regular.js', {})
+@@include('files/functions.js', {})
+@@include('files/script.js', {})
+@@include('files/cropper.js', {})
+@@include('files/header.js', {})
+@@include('files/sliders.js', {})
+@@include('files/forms.js', {})
+@@include('files/dynamic_adapt.js', {})
+@@include('files/scroll.js', {})
+@@include('files/tipy.js', {})
+

@@ -1,0 +1,279 @@
+@use "sass:math";
+//<МИКСИНЫ>===============================================================================================
+@import "mixins";
+//</МИКСИНЫ>===============================================================================================
+
+//<ШРИФТЫ>===============================================================================================
+
+//<Подключаем шрифты>=======================================================================================
+//&display=swap&subset=cyrillic-ext
+@import "fonts";
+//</Подключаем шрифты>=======================================================================================
+
+//<Шрифт по умолчанию>==========================================================================================
+$fontFamily: "PTRootUI";
+$fontSize: 14;
+
+//</Шрифт по умолчанию>==========================================================================================
+
+//</ШРИФТЫ>=======================================================================================================
+
+//<ПЕРЕМЕННЫЕ>==========================================================================================================
+$minWidth: 320px;
+$maxWidth: 1360;
+$maxWidthContainer: 1142;
+$md1: $maxWidthContainer - 1;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$mainColor: #414549;
+
+//</ПЕРЕМЕННЫЕ>===========================================================================================================
+%main-gradient {
+	background: linear-gradient(90deg, #22bb00 0%, #66bb00 100%);
+}
+%main-gradient-hover {
+	background: linear-gradient(90deg, #21b300 100%, #66bb00 0%);
+}
+
+$main: #44bb00;
+$main-opacity: rgba(69, 187, 0, 0.5);
+$main-dark: #348f00;
+$main-light-1: #b4e499;
+$main-light-2: #ecf8e5;
+
+$bg-00: #fafafa;
+$bg-01: #f5f5f5;
+$bg-02: #f3f3f3;
+$bg-03: #dbe3ea;
+$bg-04: #cdd8e2;
+$d-orange: #f7ac61;
+
+$attention-dark: #cc7a00;
+$attention: #ff9900;
+$attention-light-1: #ffd699;
+$attention-light-2: #fff5e5;
+
+$warning-dark: #d3350d;
+$warning: #f2542d;
+$warning-light-1: #fabbab;
+$warning-light-2: #feeeea;
+
+$info-dark: #0081b8;
+$info: #00a6ed;
+$info-light-1: #99dbf8;
+$info-light-2: #e5f6fd;
+$dark-blue: #00255c;
+$secondary: #485363;
+$secondary-dark: #6c89a9;
+
+$dark-1: #414549;
+$dark-2: #717579;
+$mid-1: #a1a3a5;
+$mid-2: #d1d5d9;
+$light-1: #e1e5e9;
+$light-2: #f1f3f5;
+$white: #ffffff;
+//========================================================================================================================================================
+//<Иконочные шрифты>==========================================================================================
+@import "icons";
+//</Иконочные шрифты>==========================================================================================
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "null";
+body {
+	color: $mainColor;
+	&._lock {
+		overflow: hidden;
+	}
+}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	&_log-in {
+		.page {
+			display: flex;
+			flex-direction: column;
+		}
+		.page__container {
+			flex: 1 1 auto;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+		@media (min-width: $md2+px) {
+			.header,
+			footer {
+				display: none;
+			}
+		}
+	}
+	&._loaded {
+	}
+}
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+._container {
+	max-width: $maxWidthContainer + px;
+	padding: 0 16px;
+	margin: 0 auto;
+	@media (max-width: $md3+px) {
+		max-width: none;
+		padding: 0 16px;
+	}
+}
+//</ОСНОВНАЯ СЕТКА>===========================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+@import "forms";
+@import "ui";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+//@import "datepicker";
+//@import "lightgallery";
+//@import "pagging";
+@import "tippy";
+@import "cropper.min";
+@import "popup";
+@import "header";
+@import "footer";
+@import "home";
+@import "ration-filter";
+@import "diet";
+@import "services";
+@import "block-search";
+@import "info-page";
+@import "catalog-service";
+@import "deteil-service";
+@import "comments";
+@import "log-in";
+@import "product-search";
+@import "blog";
+@import "feedback";
+@import "personal-area";
+@import "table-block";
+@import "payment";
+@import "error";
+@import "gift";
+@import "other";
+@import "menu-down";
+@import "rank";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+.page {
+	//padding: 64px 0px 80px 0px;
+	//padding: 176px 0px 80px 0px;
+	padding: 203px 0px 80px 0px;
+	flex: 1 1 auto;
+	&_gift {
+		padding: 64px 0px 80px 0px;
+	}
+
+	&__container {
+	}
+	// &_gift {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	align-items: center;
+	// 	width: 100%;
+	// 	.page__container {
+	// 		width: 100%;
+	// 		flex: 1 1 auto;
+	// 		display: flex;
+	// 		flex-direction: column;
+	// 	}
+	// }
+	&_home {
+		//padding: 16px 0px 80px 0px;
+		//padding: 128px 0px 80px 0px;
+		padding: 155px 0px 80px 0px;
+	}
+	&__body {
+		display: grid;
+		gap: 40px;
+	}
+	&__title {
+		@include adaptiv-value("font-size", 32, 24, 1);
+		@include adaptiv-value("line-height", 40, 32, 1);
+	}
+	&__main {
+		display: grid;
+		grid-template-columns: 350px 1fr;
+		gap: 30px;
+	}
+	&__nav {
+		position: relative;
+		&_grid {
+			display: grid;
+			gap: 40px;
+		}
+		&_grid-24 {
+			display: grid;
+			gap: 24px;
+		}
+	}
+	&__sections {
+		display: grid;
+		gap: 80px;
+	}
+	&__content {
+		display: grid;
+		gap: 40px;
+	}
+	&__form-container {
+		max-width: 540px;
+		margin: 0px auto;
+		width: 100%;
+	}
+	&__box {
+		display: grid;
+		gap: 24px;
+		&_32 {
+			gap: 32px;
+		}
+	}
+	&__block {
+		min-width: 100%;
+	}
+	@media (max-width: $md2+px) {
+		padding: 68px 0px 50px 0px;
+		&_gift {
+			padding-top: 60px;
+		}
+		&__sections {
+			gap: 50px;
+		}
+		&__main {
+			grid-template-columns: 1fr;
+			gap: 32px;
+		}
+	}
+	@media (max-width: $md3+px) {
+		padding: 68px 0px 32px 0px;
+		&__body {
+			gap: 32px;
+		}
+		&__sections {
+			gap: 32px;
+		}
+		&__box {
+			display: grid;
+			gap: 32px;
+		}
+		&__content {
+			gap: 32px;
+		}
+	}
+}
+//===================================================================================================================================
+
+//</ОСНОВНОЙ БЛОК>====================================================================================================

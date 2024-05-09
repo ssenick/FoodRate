@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Блог новая запись"
+})
+
+<body>
+	<div class="wrapper ">
+		@@include('_header.html',{})
+		@@include('_menu-down.html',{})
+		<main class="page">
+			<div class="page__container _container ">
+				<div class="page__body ">
+
+					<!-- blog-form-post -->
+					<form action="#" class="blog-form-post">
+						<!-- blog-form-post__section -->
+						<div class="blog-form-post__section">
+							<h3 class="blog-form-post__title">
+								Заголовок записи блога, анонс и картинка превью
+							</h3>
+							<div class="blog-form-post__input input">
+								<label for="nbpp_1" class="input__label _text-1">Заголовок записи блога</label>
+								<div class="input__line ">
+									<input id="nbpp_1" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Введите заголовок" value="В России хотят ввести налог на донаты стримерам" class="input__value">
+								</div>
+							</div>
+							<div class="blog-form-post__input input">
+								<label for="nbpp_2" class="input__label _text-1">Анонс записи</label>
+								<div class="input__line input__line_area input__line_area_94 input__line_area_mob-116">
+									<textarea id="nbpp_2" maxlength="210" autocomplete="off" name="form[]" data-value="Анонс (не более 110 символов)" data-error="Ошибка" class="input__value _counter-input-2">В своём стремлении повысить качество жизни, они забывают, что базовый вектор развития не оставляет шанса для соответствующих условий активизации.</textarea>
+								</div>
+								<div class="input__footer _flex _flex_jc-sb">
+									<span class="input__span-value _text-2 _secondary-dark">Анонс записи выводится в превью записи в блоге</span>
+									<span class="input__span-value _text-2  _secondary-dark"><span class="_counter-value">210</span>/210</span>
+								</div>
+
+							</div>
+							<div class="blog-picture">
+								<div class="blog-picture__image _ibg">
+									<img src="img/blog/image.jpg" alt="">
+								</div>
+							</div>
+
+						</div>
+						<!-- blog-form-post__section -->
+						<!-- blog-form-post__section Заголовок -->
+						<div class="blog-form-post__section">
+							<!-- blog-tools -->
+							<div class="blog-tools">
+								<div class="blog-tools__header header-blog-tools header-blog-tools_text">
+									<div class="header-blog-tools__title _title-h3">
+										<span><img src="img/blog/icons/heading-green.svg" alt="">Заголовок</span>
+									</div>
+									<div class="header-blog-tools__items items-header-blog-tools items-header-blog-tools_h">
+										<div class="items-header-blog-tools__column ">
+											<button type="button" class="items-header-blog-tools__item _icon-h1"></button>
+											<button type="button" class="items-header-blog-tools__item  _icon-h2"></button>
+											<button type="button" class="items-header-blog-tools__item  _icon-h3 _active"></button>
+											<button type="button" class="items-header-blog-tools__item  _icon-h4"></button>
+											<button type="button" class="items-header-blog-tools__item  _icon-h5"></button>
+											<button type="button" class="items-header-blog-tools__item  _icon-h6"></button>
+										</div>
+									</div>
+									<div class="header-blog-tools__actions actions-header-block-tools">
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_delete _icon-16"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_up _icon-up"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_down _icon-down"></button>
+
+									</div>
+								</div>
+								<div class="blog-tools__body">
+									<div class="blog-tools__line">
+										<div class="blog-tools__input input">
+											<div class="input__line input__line_area input__line_area_94">
+												<textarea autocomplete="off" name="form[]" data-value="Текст в две, а то и больше, строки для проверки" data-error="Ошибка" class="input__value "></textarea>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- blog-tools -->
+						</div>
+						<!-- blog-form-post__section Заголовок-->
+						<!-- blog-form-post__section Текстовый блок -->
+						<div class="blog-form-post__section">
+							<!-- blog-tools -->
+							<div class="blog-tools">
+								<div class="blog-tools__header header-blog-tools header-blog-tools_text">
+									<div class="header-blog-tools__title _title-h3">
+										<span><img src="img/blog/icons/txt-block-green.svg" alt="">Текстовый блок</span>
+									</div>
+									<div class="header-blog-tools__items items-header-blog-tools">
+										<div class="items-header-blog-tools__column">
+											<button type="button" class="items-header-blog-tools__item _icon-83"></button>
+											<button disabled type="button" class="items-header-blog-tools__item  _icon-84 _disabled"></button>
+										</div>
+										<div class="items-header-blog-tools__column">
+											<button type="button" class="items-header-blog-tools__item _icon-b"></button>
+											<button type="button" class="items-header-blog-tools__item _icon-i"></button>
+											<button type="button" class="items-header-blog-tools__item _icon-u"></button>
+										</div>
+										<div class="items-header-blog-tools__column">
+											<button type="button" class="items-header-blog-tools__item _icon-ul"></button>
+											<button type="button" class="items-header-blog-tools__item _icon-li"></button>
+										</div>
+									</div>
+									<div class="header-blog-tools__actions actions-header-block-tools">
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_delete _icon-16"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_up _icon-up"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_down _icon-down"></button>
+
+									</div>
+								</div>
+								<div class="blog-tools__body">
+									<div class="blog-tools__line">
+										<div class="block-blog-post-text ">
+											<div class="block-blog-post-text__text ">
+												<p>В своём стремлении повысить качество жизни, они забывают, что базовый вектор развития не оставляет шанса для соответствующих условий активизации. Следует отметить, что реализация намеченных плановых заданий представляет собой интересный эксперимент проверки укрепления моральных ценностей! Не следует, однако, забывать, что синтетическое тестирование выявляет срочную потребность поэтапного и последовательного развития общества. Являясь всего лишь частью общей картины, действия представителей оппозиции могут быть объективно рассмотрены соответствующими инстанциями.</p>
+											</div>
+											<ul class="block-blog-post-text__list">
+												<li>базовый вектор развития не оставляет</li>
+												<li>шанса для соответствующих условий</li>
+												<li>активизации</li>
+											</ul>
+											<ol class="block-blog-post-text__list">
+												<li>базовый вектор развития не оставляет</li>
+												<li>шанса для соответствующих условий</li>
+												<li>активизации</li>
+											</ol>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- blog-tools -->
+						</div>
+						<!-- blog-form-post__section Текстовый блок -->
+						<!-- blog-form-post__section Объект по ссылке -->
+						<div class="blog-form-post__section">
+							<!-- blog-tools -->
+							<div class="blog-tools">
+								<div class="blog-tools__header header-blog-tools header-blog-tools_text">
+									<div class="header-blog-tools__title _title-h3">
+										<span><img src="img/blog/icons/video-green.svg" alt="">Объект по ссылке</span>
+									</div>
+									<div class="header-blog-tools__input input">
+										<div class="input__line ">
+											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Ссылка на видео или другой объект" value="" class="input__value">
+										</div>
+									</div>
+									<div class="header-blog-tools__actions actions-header-block-tools">
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_delete _icon-16"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_up _icon-up"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_down _icon-down"></button>
+
+									</div>
+								</div>
+								<div class="blog-tools__body">
+									<div class="blog-tools__line">
+										<div class="blog-tools__label _text-2">Вид объекта на странице</div>
+										<div class="blog-picture">
+											<div class="blog-picture__image  _ibg">
+												<img src="img/blog/02.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- blog-tools -->
+						</div>
+						<!-- blog-form-post__section Объект по ссылке -->
+						<!-- blog-form-post__section Текстовый блок -->
+						<div class="blog-form-post__section">
+							<!-- blog-tools -->
+							<div class="blog-tools">
+								<div class="blog-tools__header header-blog-tools header-blog-tools_text">
+									<div class="header-blog-tools__title _title-h3">
+										<span><img src="img/blog/icons/txt-block-green.svg" alt="">Текстовый блок</span>
+									</div>
+									<div class="header-blog-tools__items items-header-blog-tools">
+										<div class="items-header-blog-tools__column">
+											<button type="button" class="items-header-blog-tools__item _icon-83"></button>
+											<button disabled type="button" class="items-header-blog-tools__item  _icon-84 _disabled"></button>
+										</div>
+										<div class="items-header-blog-tools__column">
+											<button type="button" class="items-header-blog-tools__item _icon-b"></button>
+											<button type="button" class="items-header-blog-tools__item _icon-i"></button>
+											<button type="button" class="items-header-blog-tools__item _icon-u"></button>
+										</div>
+										<div class="items-header-blog-tools__column">
+											<button type="button" class="items-header-blog-tools__item _icon-ul"></button>
+											<button type="button" class="items-header-blog-tools__item _icon-li"></button>
+										</div>
+									</div>
+									<div class="header-blog-tools__actions actions-header-block-tools">
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_delete _icon-16"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_up _icon-up"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_down _icon-down"></button>
+
+									</div>
+								</div>
+								<div class="blog-tools__body">
+									<div class="blog-tools__line">
+										<div class="block-blog-post-text ">
+											<div class="block-blog-post-text__text ">
+												<p>В своём стремлении повысить качество жизни, они забывают, что базовый вектор развития не оставляет шанса для соответствующих условий активизации. Следует отметить, что реализация намеченных плановых заданий представляет собой интересный эксперимент проверки укрепления моральных ценностей! Не следует, однако, забывать, что синтетическое тестирование выявляет срочную потребность поэтапного и последовательного развития общества. Являясь всего лишь частью общей картины, действия представителей оппозиции могут быть объективно рассмотрены соответствующими инстанциями.</p>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- blog-tools -->
+						</div>
+						<!-- blog-form-post__section Текстовый блок -->
+						<!-- blog-form-post__section Галерея -->
+						<div class="blog-form-post__section">
+							<!-- blog-tools -->
+							<div class="blog-tools">
+								<div class="blog-tools__header header-blog-tools">
+									<div class="header-blog-tools__title _title-h3">
+										<span><img src="img/blog/icons/gallery-green.svg" alt="">Галерея</span>
+									</div>
+									<div class="header-blog-tools__actions actions-header-block-tools">
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_delete _icon-16"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_up _icon-up"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_down _icon-down"></button>
+
+									</div>
+								</div>
+								<div class="blog-tools__body">
+									<div class="blog-tools__line">
+										<div class="blog-tools__input input">
+											<label for="nbpp_5" class="input__label _text-1">Заголовок галреи</label>
+											<div class="input__line">
+												<input id="nbpp_5" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Заголовок галереи галерейной" value="" class="input__value ">
+											</div>
+										</div>
+									</div>
+									<div class="blog-tools__line">
+										<div class="blog-tools__loading loading-comment-files loading-comment-files_blog">
+											<div class="loading-comment-files__header">
+												<div class="loading-comment-files__file _paragraph-1">photo_14012021-14-57.jpg</div>
+											</div>
+											<div class="loading-comment-files__body">
+												<div class="loading-comment-files__line">
+													<span style="width:60%"></span>
+												</div>
+												<a href="" class="loading-comment-files__cancel ">Отмена</a>
+											</div>
+											<div class="loading-comment-files__footer  _paragraph-2">5.7 Mb (1.3 Mb/s)</div>
+										</div>
+									</div>
+									<div class="blog-tools__line">
+										<div class="files-comments__loading loading-comment-files loading-comment-files_blog">
+											<div class="loading-comment-files__header _body">
+												<div class="loading-comment-files__title _paragraph-1">Все файлы загружены</div>
+											</div>
+											<div class="loading-comment-files__body">
+												<div class="loading-comment-files__line">
+													<span style="width:100%"></span>
+												</div>
+												<a href="" class="loading-comment-files__loaded _icon-74 _success"></a>
+											</div>
+											<div class="loading-comment-files__footer _dark-2 _paragraph-2">2.2 / 5.7 Mb (1.3 Mb/s)</div>
+										</div>
+									</div>
+									<div class="blog-tools__line">
+										<div class="blog-form-post__add add-comment-files add-comment-files_plus">
+											<div class="add-comment-files__content">
+												<div class="add-comment-files__icon _icon-75"></div>
+												<div class="add-comment-files__body ">
+													<div class="add-comment-files__title _paragraph-1">Перетащите сюда файлы или <span>кликните</span></div>
+													<div class="add-comment-files__label _paragraph-2">1,5 Мб, jpg или png</div>
+												</div>
+											</div>
+											<input class="add-comment-files__input" accept=".jpg, .png" type="file" multiple="">
+										</div>
+									</div>
+									<div class="blog-tools__line">
+										<!-- gallery -->
+										<div class="gallery">
+											<div class="gallery__wrapper">
+												<div class="gallery__slider-main slider-main-gallery _swiper">
+													<div class="slider-main-gallery__slide ">
+														<div class="slider-main-gallery__image _ibg">
+															<img src="img/blog/image.jpg" alt="">
+														</div>
+													</div>
+													<div class="slider-main-gallery__slide">
+														<div class="slider-main-gallery__image _ibg">
+															<img src="img/blog/02.jpg" alt="">
+														</div>
+													</div>
+													<div class="slider-main-gallery__slide ">
+														<div class="slider-main-gallery__image _ibg">
+															<img src="img/blog/image.jpg" alt="">
+														</div>
+													</div>
+													<div class="slider-main-gallery__slide">
+														<div class="slider-main-gallery__image _ibg">
+															<img src="img/blog/02.jpg" alt="">
+														</div>
+													</div>
+													<div class="slider-main-gallery__slide ">
+														<div class="slider-main-gallery__image _ibg">
+															<img src="img/blog/image.jpg" alt="">
+														</div>
+													</div>
+													<div class="slider-main-gallery__slide">
+														<div class="slider-main-gallery__image _ibg">
+															<img src="img/blog/02.jpg" alt="">
+														</div>
+													</div>
+													<div class="slider-main-gallery__slide ">
+														<div class="slider-main-gallery__image _ibg">
+															<img src="img/blog/image.jpg" alt="">
+														</div>
+													</div>
+													<div class="slider-main-gallery__slide">
+														<div class="slider-main-gallery__image _ibg">
+															<img src="img/blog/02.jpg" alt="">
+														</div>
+													</div>
+													<div class="slider-main-gallery__slide ">
+														<div class="slider-main-gallery__body">
+															<div class="slider-main-gallery__icon _icon-75"></div>
+															<input class="slider-main-gallery__input" accept=".jpg, .png" type="file" multiple="">
+														</div>
+
+													</div>
+												</div>
+												<div class="gallery__slider-nav">
+													<div class="slider-nav-gallery _swiper">
+														<div class="slider-nav-gallery__slide">
+															<div class="slider-nav-gallery__image _ibg">
+																<img src="img/blog/image.jpg" alt="">
+															</div>
+															<div class="slider-nav-gallery__actions">
+																<a href="#" class="slider-nav-gallery__button  _icon-22">
+																</a>
+																<a href="#" class="slider-nav-gallery__button  _icon-65"></a>
+															</div>
+														</div>
+														<div class="slider-nav-gallery__slide">
+															<div class="slider-nav-gallery__image _ibg">
+																<img src="img/blog/02.jpg" alt="">
+															</div>
+															<div class="slider-nav-gallery__actions">
+																<a href="#" class="slider-nav-gallery__button  _icon-22">
+																</a>
+																<a href="#" class="slider-nav-gallery__button  _icon-65"></a>
+															</div>
+														</div>
+														<div class="slider-nav-gallery__slide">
+															<div class="slider-nav-gallery__image _ibg">
+																<img src="img/blog/image.jpg" alt="">
+															</div>
+															<div class="slider-nav-gallery__actions">
+																<a href="#" class="slider-nav-gallery__button  _icon-22">
+																</a>
+																<a href="#" class="slider-nav-gallery__button  _icon-65"></a>
+															</div>
+														</div>
+														<div class="slider-nav-gallery__slide">
+															<div class="slider-nav-gallery__image _ibg">
+																<img src="img/blog/02.jpg" alt="">
+															</div>
+															<div class="slider-nav-gallery__actions">
+																<a href="#" class="slider-nav-gallery__button  _icon-22">
+																</a>
+																<a href="#" class="slider-nav-gallery__button  _icon-65"></a>
+															</div>
+														</div>
+														<div class="slider-nav-gallery__slide">
+															<div class="slider-nav-gallery__image _ibg">
+																<img src="img/blog/image.jpg" alt="">
+															</div>
+															<div class="slider-nav-gallery__actions">
+																<a href="#" class="slider-nav-gallery__button  _icon-22">
+																</a>
+																<a href="#" class="slider-nav-gallery__button  _icon-65"></a>
+															</div>
+														</div>
+														<div class="slider-nav-gallery__slide">
+															<div class="slider-nav-gallery__image _ibg">
+																<img src="img/blog/02.jpg" alt="">
+															</div>
+															<div class="slider-nav-gallery__actions">
+																<a href="#" class="slider-nav-gallery__button  _icon-22">
+																</a>
+																<a href="#" class="slider-nav-gallery__button  _icon-65"></a>
+															</div>
+														</div>
+														<div class="slider-nav-gallery__slide">
+															<div class="slider-nav-gallery__image _ibg">
+																<img src="img/blog/image.jpg" alt="">
+															</div>
+															<div class="slider-nav-gallery__actions">
+																<a href="#" class="slider-nav-gallery__button  _icon-22">
+																</a>
+																<a href="#" class="slider-nav-gallery__button  _icon-65"></a>
+															</div>
+														</div>
+														<div class="slider-nav-gallery__slide">
+															<div class="slider-nav-gallery__image _ibg">
+																<img src="img/blog/02.jpg" alt="">
+															</div>
+															<div class="slider-nav-gallery__actions">
+																<a href="#" class="slider-nav-gallery__button  _icon-22">
+																</a>
+																<a href="#" class="slider-nav-gallery__button  _icon-65"></a>
+															</div>
+														</div>
+														<div class="slider-nav-gallery__slide slider-nav-gallery__slide_plus">
+															<div class="slider-nav-gallery__body">
+																<div class="slider-nav-gallery__icon _icon-75"></div>
+															</div>
+															<input class="slider-nav-gallery__input" accept=".jpg, .png" type="file" multiple="">
+														</div>
+													</div>
+													<div class="gallery__scrollbar"></div>
+												</div>
+											</div>
+										</div>
+										<!-- gallery -->
+									</div>
+									<div class="blog-tools__line">
+										<div class="blog-tools__input input">
+											<label for="nbpp_6" class="input__label _text-1">Описание галереи</label>
+											<div class="input__line input__line_area input__line_area_94">
+												<textarea id="nbpp_6" maxlength="110" autocomplete="off" name="form[]" data-value="Введите описание (не более 110 символов)" data-error="Ошибка" class="input__value _counter-input-2 "></textarea>
+												<button type="button" class="input__button _link _icon-85"></button>
+											</div>
+											<div class="input__footer _flex _flex_jc-sb">
+												<span class="input__span-value _text-2 _dark-2">Описание выводится внизу фотографии, одно для всей галереи, рядом с элементами управления галереей</span>
+												<span class="input__span-value  _text-2 _dark-2"><span class="_counter-value">0</span>/110</span>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- blog-tools -->
+						</div>
+						<!-- blog-form-post__section Галерея -->
+						<!-- blog-form-post__section Сноска -->
+						<div class="blog-form-post__section">
+							<div class="blog-tools ">
+								<div class="blog-tools__header header-blog-tools">
+									<div class="header-blog-tools__title _title-h3 ">
+										<span><img src="img/blog/icons/notabene-green.svg" alt=""> Cноска</span>
+									</div>
+									<div class="header-blog-tools__actions actions-header-block-tools">
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_delete _icon-16"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_up _icon-up"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_down _icon-down"></button>
+
+									</div>
+								</div>
+								<div class="blog-tools__body">
+									<div class="blog-tools__line">
+										<!-- footnote -->
+										<div class="footnote">
+											<div class="footnote__wrapper">
+												<div class="footnote__select">
+													<span class="footnote__select-label ">Иконка сноски</span>
+													<select name="form[]" class="icon">
+														<option data-icon="_icon-76" value="1"></option>
+														<option data-icon="_icon-77" value="2" selected="selected"></option>
+														<option data-icon="_icon-78" value="3"></option>
+														<option data-icon="_icon-79 " value="4"></option>
+														<option data-icon="_icon-80 " value="5"></option>
+														<option data-icon="_icon-81 " value="6"></option>
+														<option data-icon="_icon-74 " value="7"></option>
+														<option data-icon="_icon-23 " value="8"></option>
+														<option data-icon="_icon-56 " value="9"></option>
+														<option data-icon="_icon-40 " value="10"></option>
+													</select>
+												</div>
+												<div class="footnote__input input">
+													<div class="input__line input__line_area">
+														<textarea autocomplete="off" name="form[]" data-value="Текст сноски" data-error="Ошибка" class="input__value"></textarea>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<!-- footnote -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- blog-form-post__section Сноска -->
+						<!-- blog-form-post__section Заголовок -->
+						<div class="blog-form-post__section">
+							<!-- blog-tools -->
+							<div class="blog-tools">
+								<div class="blog-tools__header header-blog-tools header-blog-tools_text">
+									<div class="header-blog-tools__title _title-h3">
+										<span><img src="img/blog/icons/heading-green.svg" alt="">Заголовок</span>
+									</div>
+									<div class="header-blog-tools__items items-header-blog-tools items-header-blog-tools_h">
+										<div class="items-header-blog-tools__column ">
+											<button type="button" class="items-header-blog-tools__item _icon-h1"></button>
+											<button type="button" class="items-header-blog-tools__item  _icon-h2"></button>
+											<button type="button" class="items-header-blog-tools__item  _icon-h3 _active"></button>
+											<button type="button" class="items-header-blog-tools__item  _icon-h4"></button>
+											<button type="button" class="items-header-blog-tools__item  _icon-h5"></button>
+											<button type="button" class="items-header-blog-tools__item  _icon-h6"></button>
+										</div>
+									</div>
+									<div class="header-blog-tools__actions actions-header-block-tools">
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_delete _icon-16"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_up _icon-up"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_down _icon-down"></button>
+
+									</div>
+								</div>
+								<div class="blog-tools__body">
+									<div class="blog-tools__line">
+										<div class="blog-tools__input input">
+											<div class="input__line input__line_area input__line_area_94">
+												<textarea autocomplete="off" name="form[]" data-value="Текст в две, а то и больше, строки для проверки" data-error="Ошибка" class="input__value "></textarea>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- blog-tools -->
+						</div>
+						<!-- blog-form-post__section Заголовок-->
+						<!-- blog-form-post__section Одиночное изображение -->
+						<div class="blog-form-post__section">
+							<!-- blog-tools -->
+							<div class="blog-tools">
+								<div class="blog-tools__header header-blog-tools">
+									<div class="header-blog-tools__title _title-h3">
+										<span><img src="img/blog/icons/photo-green.svg" alt="">Одинчное изображение</span>
+									</div>
+									<div class="header-blog-tools__actions actions-header-block-tools">
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_delete _icon-16"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_up _icon-up"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_down _icon-down"></button>
+
+									</div>
+								</div>
+								<div class="blog-tools__body">
+									<div class="blog-tools__line">
+										<div class="blog-tools__input input">
+											<label for="nbpp_4" class="input__label _text-1">Заголовок изображения</label>
+											<div class="input__line">
+												<input id="nbpp_4" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Введите заголовок изображения" value="" class="input__value ">
+											</div>
+										</div>
+									</div>
+									<div class="blog-tools__line">
+										<div class="blog-form-post__add add-comment-files add-comment-files_plus ">
+											<div class="add-comment-files__content">
+												<div class="add-comment-files__icon _icon-75"></div>
+												<div class="add-comment-files__body add-comment-files__body_left">
+													<div class="add-comment-files__title _paragraph-1">Перетащите сюда файлы или <span>кликните</span></div>
+													<div class="add-comment-files__label _paragraph-2">Максимальный размер 1,5 Мб, jpg или png</div>
+												</div>
+											</div>
+											<input class="add-comment-files__input" accept=".jpg, .png" type="file" multiple="">
+										</div>
+									</div>
+									<div class="blog-tools__line">
+										<div class="blog-tools__input input">
+											<label for="nbpp_3" class="input__label _text-1">Описание изображения</label>
+											<div class="input__line input__line_area input__line_area_94">
+												<textarea id="nbpp_3" maxlength="110" autocomplete="off" name="form[]" data-value="Введите описание (не более 110 символов)" data-error="Ошибка" class="input__value _counter-input-2 "></textarea>
+											</div>
+											<div class="input__footer _flex _flex_jc-sb">
+												<span class="input__span-value  _text-2 _dark-2"><span class="_counter-value">0</span>/110</span>
+												<span class="input__span-value _text-2 _dark-2">Описание выводится внизу фотографии, одно для всей галереи, рядом с элементами управления галереей</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- blog-tools -->
+						</div>
+						<!-- blog-form-post__section Одиночное изображение -->
+						<!-- blog-form-post__section Настройки изображения -->
+						<div class="blog-form-post__section">
+							<!-- blog-tools -->
+							<div class="blog-tools">
+								<div class="blog-tools__header header-blog-tools">
+									<div class="header-blog-tools__title _title-h3">
+										<span><img src="img/blog/icons/photo-green.svg" alt="">Настройки изображения</span>
+									</div>
+									<div class="header-blog-tools__actions actions-header-block-tools">
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_delete _icon-16"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_up _icon-up"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_down _icon-down"></button>
+									</div>
+								</div>
+								<div class="blog-tools__body">
+									<div class="blog-tools__line">
+										<div class="blog-form-post__image-setting image-setting ">
+											<div class="image-setting__content">
+												<div class="image-setting__image ">
+													<img id="image" src="img/blog/image.jpg" alt="">
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<div class="blog-tools__line">
+										<div class="blog-tools__input input">
+											<label for="nbpp_30" class="input__label _text-1">Описание изображения</label>
+											<div class="input__line input__line_area input__line_area_94">
+												<textarea id="nbpp_30" maxlength="110" autocomplete="off" name="form[]" data-value="Введите описание (не более 110 символов)" data-error="Ошибка" class="input__value _counter-input-2 "></textarea>
+											</div>
+											<div class="input__footer _flex _flex_jc-sb">
+												<span class="input__span-value  _text-2 _dark-2"><span class="_counter-value">0</span>/110</span>
+												<span class="input__span-value _text-2 _dark-2">Описание выводится внизу фотографии, одно для всей галереи, рядом с элементами управления галереей</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- blog-tools -->
+						</div>
+						<!-- blog-form-post__section Настройки изображения -->
+						<!-- blog-form-post__section Разрыв страницы-->
+						<div class="blog-form-post__section">
+							<!-- blog-tools -->
+							<div class="blog-tools">
+								<div class="blog-tools__header header-blog-tools header-blog-tools_divider">
+									<div class="header-blog-tools__title _title-h3">
+										<span><img src="img/blog/icons/divider-green.svg" alt="">Разрыв страницы</span>
+									</div>
+									<div class="header-blog-tools__items">
+									</div>
+
+									<div class="header-blog-tools__actions actions-header-block-tools">
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_delete _icon-16"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_up _icon-up"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_down _icon-down"></button>
+									</div>
+								</div>
+							</div>
+							<!-- blog-tools -->
+						</div>
+						<!-- blog-form-post__section Разрыв страницы -->
+						<!-- blog-form-post__section Текстовый блок -->
+						<div class="blog-form-post__section">
+							<!-- blog-tools -->
+							<div class="blog-tools">
+								<div class="blog-tools__header header-blog-tools header-blog-tools_text">
+									<div class="header-blog-tools__title _title-h3">
+										<span><img src="img/blog/icons/txt-block-green.svg" alt="">Текстовый блок</span>
+									</div>
+									<div class="header-blog-tools__items items-header-blog-tools">
+										<div class="items-header-blog-tools__column">
+											<button type="button" class="items-header-blog-tools__item _icon-83"></button>
+											<button disabled type="button" class="items-header-blog-tools__item  _icon-84 _disabled"></button>
+										</div>
+										<div class="items-header-blog-tools__column">
+											<button type="button" class="items-header-blog-tools__item _icon-b"></button>
+											<button type="button" class="items-header-blog-tools__item _icon-i"></button>
+											<button type="button" class="items-header-blog-tools__item _icon-u"></button>
+										</div>
+										<div class="items-header-blog-tools__column">
+											<button type="button" class="items-header-blog-tools__item _icon-ul"></button>
+											<button type="button" class="items-header-blog-tools__item _icon-li"></button>
+										</div>
+									</div>
+									<div class="header-blog-tools__actions actions-header-block-tools">
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_delete _icon-16"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_up _icon-up"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_down _icon-down"></button>
+
+									</div>
+								</div>
+								<div class="blog-tools__body">
+									<div class="blog-tools__line">
+										<div class="block-blog-post-text ">
+											<div class="block-blog-post-text__text ">
+												<p>В своём стремлении повысить качество жизни, они забывают, что базовый вектор развития не оставляет шанса для соответствующих условий активизации. Следует отметить, что реализация намеченных плановых заданий представляет собой интересный эксперимент проверки укрепления моральных ценностей! Не следует, однако, забывать, что синтетическое тестирование выявляет срочную потребность поэтапного и последовательного развития общества. Являясь всего лишь частью общей картины, действия представителей оппозиции могут быть объективно рассмотрены соответствующими инстанциями.</p>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- blog-tools -->
+						</div>
+						<!-- blog-form-post__section Текстовый блок -->
+						<!-- blog-form-post__section Цитата -->
+						<div class="blog-form-post__section">
+							<!-- blog-tools -->
+							<div class="blog-tools ">
+								<div class="blog-tools__header header-blog-tools">
+									<div class="header-blog-tools__title _title-h3">
+										<span> <img src="img/blog/icons/quote-green.svg" alt=""> Цитата</span>
+									</div>
+									<div class="header-blog-tools__actions actions-header-block-tools">
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_delete _icon-16"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_up _icon-up"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_down _icon-down"></button>
+
+									</div>
+								</div>
+								<div class="blog-tools__body">
+									<div class="blog-tools__line ">
+										<div class="blog-tools__input input">
+											<label for="nbpp_11" class="input__label _text-1">Заголовок цитаты</label>
+											<div class="input__line ">
+												<input id="nbpp_11" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Введите цитаты" value="" class="input__value ">
+											</div>
+										</div>
+									</div>
+									<div class="blog-tools__line">
+										<!-- quotes-block -->
+										<div class="quotes-block">
+											<div class="quotes-block__avatar">
+												<div class="quotes-block__label _dark-2">Фото автора</div>
+												<div class="quotes-block__plus">
+													<div class="quotes-block__icon _icon-75"></div>
+													<input class="quotes-block__inp" accept=".jpg, .png" type="file" multiple="">
+												</div>
+											</div>
+
+											<div class="quotes-block__content">
+												<div class="quotes-block__input input">
+													<div class="input__line input__line_area ">
+														<textarea autocomplete="off" name="form[]" data-value="Тескт цитаты" data-error="Ошибка" class="input__value "></textarea>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- quotes-block -->
+									</div>
+									<div class="blog-tools__line ">
+										<div class="blog-tools__input input">
+											<div class="input__line ">
+												<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Имя автора или ссылка на профиль" value="" class="input__value ">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- blog-tools -->
+						</div>
+						<!-- blog-form-post__section Цитата -->
+						<!-- blog-form-post__section Таблица -->
+						<div class="blog-form-post__section">
+							<!-- blog-tools -->
+							<div class="blog-tools ">
+								<div class="blog-tools__header header-blog-tools">
+									<div class="header-blog-tools__title _title-h3">
+										<span><img src="img/blog/icons/table-green.svg" alt="">Таблица</span>
+									</div>
+									<div class="header-blog-tools__actions actions-header-block-tools">
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_delete _icon-16"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_up _icon-up"></button>
+										<button type="button" class="actions-header-block-tools__item actions-header-block-tools__item_down _icon-down"></button>
+
+									</div>
+								</div>
+								<div class="blog-tools__body blog-tools__body_table">
+									<div class="blog-tools__line">
+										<!-- building-table -->
+										<div class="building-table">
+											<div class="building-table__body">
+												<div class="building-table__items">
+													<div class="building-table__row building-table__row_caption building-table__row_caption-line">
+														<div class="building-table__wrapper">
+															<div class="building-table__input input">
+																<div class="input__line ">
+																	<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Заголовок" value="" class="input__value">
+																</div>
+															</div>
+															<div class="building-table__input input">
+																<div class="input__line ">
+																	<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Заголовок" value="" class="input__value">
+																</div>
+															</div>
+														</div>
+
+													</div>
+													<div class="building-table__row">
+														<div class="building-table__wrapper">
+															<div class="building-table__input input">
+																<button type="button" class="building-table__button building-table__button_input   _icon-22"></button>
+																<div class="input__line _selected">
+																	<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Ячейка" value="Текст" class="input__value _selected">
+																</div>
+															</div>
+															<div class="building-table__input input">
+																<div class="input__line _selected">
+																	<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Ячейка" value="Текст" class="input__value _selected">
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="building-table__row">
+														<div class="building-table__wrapper">
+															<div class="building-table__input input">
+																<div class="input__line _selected">
+																	<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Ячейка" value="Текст" class="input__value _selected">
+																</div>
+															</div>
+															<div class="building-table__input input">
+																<div class="input__line _selected">
+																	<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Ячейка" value="Текст" class="input__value _selected">
+																</div>
+															</div>
+														</div>
+													</div>
+													<button type="button" class="building-table__button building-table__button_row-right  _icon-22"></button>
+													<button type="button" class="building-table__button building-table__button_row-bottom  _icon-22"></button>
+												</div>
+
+											</div>
+										</div>
+										<!-- building-table -->
+									</div>
+								</div>
+							</div>
+							<!-- blog-tools -->
+						</div>
+						<!-- blog-form-post__section Таблица -->
+						<!-- blog-form-post__section Добавить блок -->
+						<div class="blog-form-post__section">
+							<div class="blog-form-post__add add-posts">
+								<button type="button" class="add-posts__content">
+									<div class="add-posts__plus">
+										<div class="add-posts__icon _icon-75"></div>
+									</div>
+									<span class="add-posts__text _paragraph-1">Добавить блок</span>
+								</button>
+
+							</div>
+						</div>
+						<!-- blog-form-post__section Добавить блок -->
+
+						<!-- blog-form-post__section -->
+						<div class="blog-form-post__section">
+							<div class="blog-form-post__add add-all-posts">
+								<div class="add-all-posts__content">
+									<div class="add-all-posts__plus">
+										<div class="add-all-posts__icon _icon-75"></div>
+										<span class="_paragraph-1">Добавить блок</span>
+									</div>
+									<div class="add-all-posts__body">
+										<div class="add-all-posts__buttons">
+											<button type="button" class="add-all-posts__button button button_xs button_green  button_icon "><span> <img src="img/blog/icons/heading.svg" alt="">Заголовок</span></button>
+											<button type="button" class="add-all-posts__button button button_xs button_green button_icon "><span> <img src="img/blog/icons/txt-block.svg" alt="">Текстовый блок</span></button>
+											<button type="button" class="add-all-posts__button button button_xs button_green button_icon "><span> <img src="img/blog/icons/gallery.svg" alt="">Галерея</span></button>
+											<button type="button" class="add-all-posts__button button button_xs button_green button_icon "><span> <img src="img/blog/icons/photo.svg" alt="">Одиночное изображение</span></button>
+											<button type="button" class="add-all-posts__button button button_xs button_green button_icon "><span> <img src="img/blog/icons/notabene.svg" alt="">Сноска</span></button>
+											<button type="button" class="add-all-posts__button button button_xs button_green button_icon "><span> <img src="img/blog/icons/video.svg" alt="">Объект по ссылке</span></button>
+											<button type="button" class="add-all-posts__button button button_xs button_green button_icon "><span> <img src="img/blog/icons/divider.svg" alt="">Разрыв страницы</span></button>
+											<button type="button" class="add-all-posts__button button button_xs button_green button_icon "><span> <img src="img/blog/icons/quote.svg" alt="">Цитата</span></button>
+											<button type="button" class="add-all-posts__button button button_xs button_green button_icon "><span> <img src="img/blog/icons/table.svg" alt="">Таблица</span></button>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<!-- blog-form-post__section  -->
+						<!-- blog-form-post__section  -->
+						<div class="blog-form-post__section">
+							<div class="blog-form-post__actions actions-blog-post">
+								<button type="button" class="actions-blog-post__button button_p12 button_grey button_h44 button"><span>Удалить запись</span></button>
+								<button type="button" class="actions-blog-post__button button_p12 button_grey button_h44 button"><span>Предложить как новость</span></button>
+								<button type="button" class="actions-blog-post__button button_p12 button_grey button_h44 button"><span>Предварительный просмотр</span></button>
+								<button type="submit" class="actions-blog-post__button button_p12 button_green button_h44 button "><span>Сохранить</span></button>
+							</div>
+						</div>
+						<!-- blog-form-post__section  -->
+					</form>
+					<!-- blog-form-post  -->
+
+				</div>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+
+	@@include('_js.html',{})
+</body>
+
+</html>

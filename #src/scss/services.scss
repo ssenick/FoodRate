@@ -1,0 +1,239 @@
+.services {
+	display: grid;
+	gap: 40px;
+	// .services__cards
+	&__cards {
+		display: grid;
+		gap: 12px;
+	}
+	// .services__card
+	&__card {
+	}
+	&__more {
+		@media (max-width: $md4+px) {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+}
+.card-services {
+	@extend ._shadow-w;
+	border-radius: 16px;
+	display: flex;
+	// .card-services__company
+	&__company {
+		flex: 0 1 34%;
+	}
+	// .card-services__info
+	&__info {
+		flex: 0 1 66%;
+	}
+	@media (max-width: $md1+px) {
+		display: grid;
+		gap: 20px;
+		padding: 20px;
+	}
+}
+.company-card-services {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+	max-height: 180px;
+	// .company-card-services__header
+	&__header {
+	}
+	// .company-card-services__row
+	&__row {
+		display: flex;
+		align-items: center;
+		&:not(:last-child) {
+			margin: 0px 0px 8px 0px;
+		}
+	}
+	// .company-card-services__name
+	&__name {
+		@extend ._title-h2;
+		color: inherit;
+	}
+	// .company-card-services__icon
+	&__icon {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		color: $white;
+		background-color: $attention;
+		box-shadow: 0px 4px 8px rgba(255, 153, 0, 0.5);
+		border-radius: 8px;
+		width: 32px;
+		height: 32px;
+		flex: 0 0 32px;
+		margin: 0px 0px 0px 12px;
+		position: relative;
+		&::before {
+			color: inherit;
+			font-size: 16px;
+		}
+
+		&:hover {
+			._tippy {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+	// .company-card-services__
+	&__rating {
+		position: relative;
+		&:hover {
+			.company-card-services__menu-rating {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+	// .company-card-services__bottom
+	&__bottom {
+	}
+	&__menu-rating {
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
+	// .company-card-services__gf
+	&__logo {
+		height: 44px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		padding: 2px 6px;
+		box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+		border-radius: 8px;
+		background-color: $white;
+		overflow: hidden;
+		picture {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			height: 44px;
+			img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+		&_gf {
+			width: 44px;
+			flex: 0 0 44px;
+			padding: 0;
+			box-shadow: 0px 6px 12px rgba(69, 195, 113, 0.5);
+		}
+	}
+	@media (max-width: $md1+px) {
+		padding: 0;
+	}
+}
+
+.info-card-services {
+	padding: 20px;
+	border-left: 1px solid $light-1;
+	// .info-card-services__text
+	&__text {
+		@extend ._paragraph-2;
+		color: $dark-2;
+		padding-bottom: 19px;
+		border-bottom: 1px solid $light-1;
+	}
+	// .info-card-services__bottom
+	&__bottom {
+		padding-top: 20px;
+		display: flex;
+		align-items: center;
+		gap: 24px;
+	}
+	// .info-card-services__items
+	&__items {
+		flex: 1 1 auto;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 24px;
+	}
+	// .info-card-services__item
+	&__item {
+		display: flex;
+		align-items: center;
+		color: inherit;
+
+		@extend ._text-1;
+		span {
+			text-decoration: underline;
+		}
+		&::before {
+			color: $mid-2;
+			margin-right: 6px;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				span {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	// .info-card-services__actions
+	&__actions {
+		display: flex;
+		gap: 8px;
+	}
+	// .info-card-services__btn
+	&__btn {
+		flex: 0 0 44px;
+		span {
+			margin-left: 8px;
+			display: none;
+		}
+	}
+	@media (max-width: $md1+px) {
+		padding: 0;
+		border: none;
+	}
+	@media (max-width: $md3+px) {
+		// .info-card-services__text
+		&__text {
+			padding-bottom: 0px;
+		}
+		// .info-card-services__bottom
+		&__bottom {
+			padding-top: 20px;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		// .info-card-services__items
+		&__items {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 24px;
+		}
+		// .info-card-services__actions
+		&__actions {
+			display: flex;
+			gap: 8px;
+			align-self: stretch;
+			.info-card-services__btn {
+				span {
+					display: block;
+				}
+				&:first-child {
+					flex: 1 1 auto;
+				}
+			}
+		}
+	}
+}

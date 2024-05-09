@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Оплата"
+})
+
+<body>
+	<div class="wrapper ">
+		@@include('_header.html',{})
+		@@include('_menu-down.html',{})
+		<main class="page">
+			<div class="page__container _container ">
+				<div class="page__body ">
+					<div class="page__content">
+						<!-- breadcrumb -->
+						<div class="breadcrumb">
+							<ul class="breadcrumb__list">
+								<li><a href="#" class="breadcrumb__item">Главная</a><!-- row-->
+								<li><a class="breadcrumb__item">Оплата</a><!-- row-->
+							</ul>
+						</div>
+						<!-- breadcrumb -->
+						<div class=" payment-page">
+							<form action="#" class="payment-page__form">
+								<h1 class="payment-page__title">Поплнение счёта аккаунта</h1>
+								<div class="payment-page__section">
+									<h3 class="payment-page__label _dark-2">Оплатить сохранённой картой</h3>
+									<!-- cards-main-payment -->
+									<div class="payment-page__cards cards-main-payment _payment-method-cards">
+										<!-- card-main-payment -->
+										<div class="cards-main-payment__card card-main-payment _active">
+											<div class="card-main-payment__icon ">
+												<img src="img/icons/payment/01.svg" alt="">
+											</div>
+											<div class="card-main-payment__number">5698 23** **** 9874</div>
+											<div class="card-main-payment__term">
+												09/26
+											</div>
+										</div>
+										<!-- card-main-payment -->
+										<!-- card-main-payment -->
+										<div class="cards-main-payment__card card-main-payment">
+											<div class="card-main-payment__icon ">
+												<img src="img/icons/payment/01.svg" alt="">
+											</div>
+											<div class="card-main-payment__number">5698 23** **** 9874</div>
+											<div class="card-main-payment__term">
+												09/26
+											</div>
+										</div>
+										<!-- card-main-payment -->
+									</div>
+									<!-- cards-main-payment -->
+								</div>
+								<div class="payment-page__section payment-page__section_grid-32">
+									<!-- payment-methods -->
+									<div class="payment-page__methods payment-methods">
+										<h3 class="payment-methods__label _dark-2">Другие способы оплаты</h3>
+										<div class="payment-methods__items">
+											<div class="payment-methods__item ">
+												<!-- item-payment-method -->
+												<a href="#" class="item-payment-method">
+													<div class="item-payment-method__icon">
+														<img src="img/icons/payment/02.svg" alt="">
+													</div>
+													<div class="item-payment-method__name _dark-blue">
+														По реквизитам
+													</div>
+												</a>
+												<!-- item-payment-method -->
+											</div>
+											<div class="payment-methods__item ">
+												<!-- item-payment-method -->
+												<a href="#" class="item-payment-method">
+													<div class="item-payment-method__icon">
+														<img src="img/icons/payment/02.svg" alt="">
+													</div>
+													<div class="item-payment-method__name _dark-blue">
+														Безналичным переводом
+													</div>
+												</a>
+												<!-- item-payment-method -->
+											</div>
+											<div class="payment-methods__item ">
+												<!-- item-payment-method -->
+												<a href="#" class="item-payment-method">
+													<div class="item-payment-method__icon">
+														<img src="img/icons/payment/01.svg" alt="">
+													</div>
+													<div class="item-payment-method__name _dark-blue">
+														Банковские карты
+													</div>
+												</a>
+												<!-- item-payment-method -->
+											</div>
+											<div class="payment-methods__item ">
+												<!-- item-payment-method -->
+												<a href="#" class="item-payment-method">
+													<div class="item-payment-method__icon">
+														<img src="img/icons/payment/03.svg" alt="">
+													</div>
+													<div class="item-payment-method__name _dark-blue">
+														Qiwi кошелёк
+													</div>
+												</a>
+												<!-- item-payment-method -->
+											</div>
+											<div class="payment-methods__item ">
+												<!-- item-payment-method -->
+												<a href="#" class="item-payment-method">
+													<div class="item-payment-method__icon">
+														<img src="img/icons/payment/04.svg" alt="">
+													</div>
+													<div class="item-payment-method__name _dark-blue">
+														Ю касса
+													</div>
+												</a>
+												<!-- item-payment-method -->
+											</div>
+											<div class="payment-methods__item ">
+												<!-- item-payment-method -->
+												<a href="#" class="item-payment-method _active">
+													<div class="item-payment-method__icon">
+														<img src="img/icons/payment/05.svg" alt="">
+													</div>
+													<div class="item-payment-method__name _dark-blue">
+														PayPall
+													</div>
+												</a>
+												<!-- item-payment-method -->
+											</div>
+										</div>
+									</div>
+									<!-- payment-methods -->
+									<!-- payment-page__agreement -->
+									<div class="payment-page__agreement">
+										<div class="main-payment__checkbox ">
+											<div class="checkbox">
+												<input id="form_1" checked="" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="form_1" class="checkbox__body">
+													<div tabindex="-1" class="checkbox__content">
+														<span tabindex="-1" class="checkbox__text">Я ознакомлен с</span>
+													</div>
+												</label>
+												<a href="#">&nbsp;правилами сервиса</a>
+											</div>
+
+										</div>
+										<p class="main-payment__desc">
+											Не следует, однако забывать, что начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки модели развития.
+										</p>
+									</div>
+
+									<!-- payment-page__agreement -->
+									<!-- section-payment-footer -->
+									<div class="payment-page__footer section-payment-footer">
+										<div class="section-payment-footer__total">
+											<span class="main-payment__text">Итого к оплате:</span>
+											<span class="main-payment__value">51 000₽</span>
+										</div>
+										<button type="submit" class=" section-payment-footer__button button button_h44"><span>Оплатить</span></button>
+									</div>
+									<!-- section-payment-footer -->
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

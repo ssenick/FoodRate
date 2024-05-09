@@ -1,0 +1,263 @@
+.types-block {
+	display: grid;
+	gap: 40px;
+	// .types-block__item
+	&__item {
+	}
+}
+.type {
+	display: inline-flex;
+	align-items: center;
+	column-gap: 18px;
+	// .type__image
+	&__image {
+		flex: 0 0 20px;
+		width: 20px;
+		height: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 4px;
+		img {
+			display: block;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	// .type__text
+	&__text {
+		@extend ._text-1;
+	}
+}
+.location {
+	display: grid;
+	gap: 24px;
+	padding: 20px;
+	max-width: 399px;
+	box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+	border-radius: 16px;
+	// .location__text
+	&__text {
+		display: inline-flex;
+		&::before {
+			flex: 0 0 20px;
+			height: 20px;
+			width: 20px;
+			margin: 0px 6px 0px 0px;
+			color: $main;
+		}
+	}
+	// .location__actions
+	&__actions {
+		display: flex;
+		gap: 16px;
+		flex-wrap: wrap;
+	}
+	// .location__button
+	&__button {
+		flex: 1 1 auto;
+	}
+}
+.containre-detail {
+	max-width: 540px;
+}
+.detail {
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+	background: $white;
+	box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.16);
+	border-radius: 16px;
+	padding: 20px;
+	// .detail__image
+	&__image {
+		flex: 1 1 240px;
+		padding: 0px 0px 36% 0px;
+	}
+	// .detail__content
+	&__content {
+		flex: 1 0 240px;
+	}
+	// .detail__title
+	&__title {
+		&:not(:last-child) {
+			margin: 0px 0px 8px 0px;
+		}
+	}
+	// .detail__about
+	&__about {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 12px;
+		&:not(:last-child) {
+			margin: 0px 0px 24px 0px;
+		}
+	}
+	// .detail__ratings
+	&__ratings {
+	}
+	// .detail__items
+	&__items {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		flex-wrap: wrap;
+	}
+	// .detail__item
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+	&__li {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+	// .detail__list
+	&__list {
+		display: grid;
+		gap: 8px;
+	}
+	// .detail__name
+	&__name {
+		min-width: 70px;
+	}
+	// .detail__value
+	&__value {
+	}
+	@media (max-width: $md3+px) {
+		flex-direction: column;
+		// .detail__image
+		&__image {
+			width: 100%;
+			padding: 0px 0px 70% 0px;
+			flex: 1 1 auto;
+		}
+		// .detail__content
+		&__content {
+			flex: 1 1 auto;
+			width: 100%;
+		}
+		// .detail__about
+		&__about {
+			&:not(:last-child) {
+				margin: 0px 0px 16px 0px;
+			}
+		}
+		&__name,
+		&__value {
+			flex: 0 0 50%;
+		}
+	}
+}
+//========================================================================================================================================================
+.tosts {
+	// .tosts__wrapper
+	&__wrapper {
+		display: grid;
+		gap: 12px;
+	}
+}
+.tost {
+	background: $white;
+	box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.16);
+	border-radius: 16px;
+	position: relative;
+	max-width: 350px;
+
+	// .tost_info
+	&_info {
+		.tost__icon {
+			color: $info;
+		}
+	}
+	// .tost_success
+	&_success {
+		.tost__icon {
+			color: $main;
+		}
+	}
+	// .tost_fail
+	&_fail {
+		.tost__icon {
+			color: #F2542D;
+			&::before{
+				transform: rotate(-45deg);
+			}
+		}
+	}
+	// .tost_warn
+	&_warn {
+		.tost__icon {
+			color: $attention;
+		}
+	}
+	// .tost__body
+	&__body {
+		padding: 20px;
+		display: flex;
+		align-items: flex-start;
+		gap: 8px;
+	}
+	// .tost__close
+	&__close {
+		position: absolute;
+		top: 12px;
+		right: 12px;
+		width: 20px;
+		height: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $mid-1;
+		transition: color 0.3s ease 0s;
+		&::before {
+			color: inherit;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+	// .tost__icon
+	&__icon {
+		flex: 0 0 20px;
+		width: 20px;
+		height: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $dark-1;
+		&::before {
+			color: inherit;
+			width: 16px;
+			height: 16px;
+			flex: 0 0 16px;
+			font-size: 16px;
+		}
+	}
+	// .tost__content
+	&__content {
+	}
+	// .tost__label
+	&__label {
+		margin: 0px 20px 0px 0px;
+		&:not(:last-child) {
+			margin: 0px 0px 6px 0px;
+		}
+	}
+	// .tost__text
+	&__text {
+		font-size: 14px;
+		line-height: math.div(24px, 14px) * 100%;
+	}
+	// .tost__header
+	&__header {
+	}
+	// .tost__link
+	&__link {
+	}
+}

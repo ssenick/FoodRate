@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Настройки профиля"
+})
+
+<body>
+	<div class="wrapper ">
+		@@include('_header.html',{})
+		@@include('_menu-down.html',{})
+		<main class="page">
+			<div class="page__container _container ">
+				<div class="page__body ">
+					<div class="page__content">
+						<!-- breadcrumb -->
+						<div class="breadcrumb">
+							<ul class="breadcrumb__list">
+								<li><a href="#" class="breadcrumb__item">Главная</a></li>
+								<li><a href="#" class="breadcrumb__item">Личный кабинет</a></li>
+								<li><a class="breadcrumb__item">Настройки профиля</a></li>
+							</ul>
+						</div>
+						<!-- breadcrumb -->
+
+					</div>
+					<div class="page__main  ">
+						<div class="page__nav ">
+							<div class="page__box">
+								<!-- profile -->
+								<div class="profile">
+									<div class="profile__header header-profile">
+										<div class="header-profile__avatar _avatar">
+											<div class="_avatar__image">
+												<img src="img/avatar.jpg" alt="">
+											</div>
+											<div class="_avatar__image">
+												<img src="img/avatar.jpg" alt="">
+											</div>
+										</div>
+										<div class="header-profile__info">
+											<div class="header-profile__name _title-h4">Константин Константинопольский</div>
+											<div class="header-profile__status _mid-1 _text-1">Пользователь</div>
+										</div>
+									</div>
+									<div class="profile__footer footer-profile">
+										<a href="mailto:konstantin_konstantinopolsky@gmail.com" class="footer-profile__item _icon-58">konstantin_konstantinopolsky@gmail.com</a>
+										<span class="footer-profile__item _icon-36">Зарегистрирован 20.09.2020</span>
+									</div>
+								</div>
+								<!-- profile -->
+								<!-- navigation -->
+								<nav class="navigation ">
+									<a href="#" class="navigation__button">
+										<div class="navigation__content-button">
+											<span class="navigation__icon _icon-54"></span>
+											<span class="navigation__name">Найстроки профиля</span>
+										</div>
+									</a>
+									<ul class="navigation__list">
+										<li class="navigation__item">
+											<a href="#" class="navigation__link ">
+												<span class="navigation__icon _icon-53"></span>
+												<span class="navigation__name">Аккаунт</span>
+											</a>
+										</li>
+										<li class="navigation__item">
+											<a href="#" class="navigation__link ">
+												<span class="navigation__icon _icon-02"></span>
+												<span class="navigation__name">Уведомления</span>
+											</a>
+										</li>
+										<li class="navigation__item">
+											<a href="# " class="navigation__link _active">
+												<span class="navigation__icon _icon-54"></span>
+												<span class="navigation__name">Найстроки профиля</span>
+											</a>
+										</li>
+										<li class="navigation__item">
+											<a href="#" class="navigation__link _">
+												<span class="navigation__icon _icon-24"></span>
+												<span class="navigation__name">Мои комментарии</span>
+											</a>
+										</li>
+										<li class="navigation__item">
+											<a href="#" class="navigation__link ">
+												<span class="navigation__icon _icon-21"></span>
+												<span class="navigation__name">Мои обзоры</span>
+											</a>
+										</li>
+										<li class="navigation__item">
+											<a href="#" class="navigation__link ">
+												<span class="navigation__icon _icon-03"></span>
+												<span class="navigation__name">Избранное</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+								<!-- navigation -->
+							</div>
+
+						</div>
+						<div class="page__section">
+							<div class="page__box">
+								<h1 data-da=".page__main,991.98,0">Настройки профиля</h1>
+								<!-- add-avatar -->
+								<div class="add-avatar">
+									<div class="add-avatar__header header-add-avatar">
+										<div class="header-add-avatar__picture">
+											<div class="header-add-avatar__image">
+												<img src="img/avatar.jpg" alt="">
+											</div>
+											<button type="button" class="header-add-avatar__close _icon-16"></button>
+										</div>
+
+										<div class="header-add-avatar__body">
+											<div class="header-add-avatar__add-btn avatar-add">
+												<div class="avatar-add__body">
+													<div class="avatar-add__title _paragraph-2 _icon-55">Загрузить фотографию</div>
+												</div>
+												<input class="avatar-add__input" accept=".jpg, .png" type="file" multiple="">
+											</div>
+											<span class="header-add-avatar__info _dark-2 _text-1">Изображение должно быть не больше 2MB, в формате JPG или PNG</span>
+										</div>
+									</div>
+									<div class="add-avatar__footer ">
+										<div class="add-avatar__switcher ">
+											<div class=" switcher ">
+												<div class="switcher__main">
+													<input id="s_1" data-error="Ошибка" class="switcher__input" type="checkbox" value="1" name="form[]">
+													<label for="s_1" class="switcher__body">
+														<span class="switcher__icon"><span></span></span>
+													</label>
+												</div>
+												<div class="switcher__descr _body">Я хочу получать вознаграждение за обзоры сервисов</div>
+											</div>
+										</div>
+										<div class="add-avatar__switcher ">
+											<div class=" switcher _disabled">
+												<div class="switcher__main">
+													<input disabled id="s_2" data-error="Ошибка" class="switcher__input" type="checkbox" value="1" name="form[]">
+													<label for="s_2" class="switcher__body">
+														<span class="switcher__icon"><span></span></span>
+													</label>
+												</div>
+												<div class="switcher__descr _body">Я готов(а) делать обзоры прямо сейчас</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<!-- add-avatar -->
+								<!-- basic-information -->
+								<section class="basic-information">
+									<h3 class="basic-information__title">Основная информация</h3>
+									<form action="#" class="basic-information__form form-basic-information">
+										<div class="form-basic-information__row">
+											<div class="form-basic-information__input input">
+												<label for="info_1" class="input__label">Имя</label>
+												<div class="input__line">
+													<input id="info_1" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="" value="Константин" class="input__value _req">
+												</div>
+											</div>
+											<div class="form-basic-information__input input">
+												<label for="info_2" class="input__label">Фамилия</label>
+												<div class="input__line">
+													<input id="info_2" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="" value="Константинопольский" class="input__value _req">
+												</div>
+											</div>
+										</div>
+										<div class="form-basic-information__row">
+											<div class="form-basic-information__input input">
+												<div class="input__top">
+													<label for="info_3" class="input__label">Телефон</label>
+													<a href="#sms-1" class="input__message _link _popup-link"> Подтвердить телефон </a>
+												</div>
+												<div class="input__line input__line_just-con">
+													<input id="info_3" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="" value="+7 (921) 12 33 145" class="input__value _phone _req">
+													<span class="input__atention _icon-56"></span>
+												</div>
+											</div>
+											<div class="form-basic-information__input input">
+												<label for="info_4" class="input__label">Еmail</label>
+												<div class="input__line input__line_just-con _disabled ">
+													<input id="info_4" disabled autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="" value="konstantin_konstantinopolsky@gmail.com" class="input__value _email _req">
+													<span class="input__ok _icon-57"></span>
+												</div>
+											</div>
+
+										</div>
+										<div class="form-basic-information__input input">
+											<label for="info_5" class="input__label">О себе</label>
+											<div class="input__line input__line_area input__line_feedback">
+												<textarea id="info_5" autocomplete="off" name="form[]" data-value="Расскажите о себе " data-error="Ошибка" class="input__value"></textarea>
+											</div>
+										</div>
+										<div class="form-basic-information__footer">
+											<button type="submit" class="form-basic-information__button button button_s "><span>Сохранить изменения</span></button>
+										</div>
+									</form>
+								</section>
+								<!-- basic-information -->
+								<!-- security-settings -->
+								<section class="security-settings">
+									<h3 class="security-settings__title">Настройки безопасности</h3>
+									<form action="#" class="security-settings__form form-security-settings">
+										<div class="form-security-settings__body">
+											<div class="form-security-settings__row">
+												<div class="form-security-settings__input input input_pass">
+													<label for="security-settings_1" class="input__label">Новый пароль</label>
+													<div class="input__line input__line_icon">
+														<input data-required="password" data-password-one id="security-settings_1" autocomplete="off" type="password" name="form[]" data-error="Минимум 8 символов" data-error-pass="Пороли не совпадают" data-value="" class="input__value _req">
+														<button type="button" class="input__button  _search-button _search-open  _icon-49 _viewpass"></button>
+													</div>
+												</div>
+												<div class="form-security-settings__input input input_pass">
+													<label for="security-settings_2" class="input__label">Повторите парольь</label>
+													<div class="input__line input__line_icon">
+														<input data-required="password" data-password-two id="security-settings_2" autocomplete="off" type="password" name="form[]" data-error="Минимум 8 символов" data-error-pass="Пороли не совпадают" data-value="" class="input__value _req">
+														<button type="button" class="input__button  _search-button _search-open  _icon-49 _viewpass"></button>
+													</div>
+												</div>
+
+											</div>
+										</div>
+										<div class="form-security-settings__footer">
+											<button type="submit" class="form-security-settings__button button button_s "><span>Изменить пароль</span></button>
+										</div>
+									</form>
+								</section>
+								<!-- security-settings -->
+								<!-- social-networks -->
+								<section class="social-networks">
+									<h3 class="social-networks__title">
+										Мои социальные сети
+									</h3>
+									<form action="#" class="social-networks__forms form-social-networks _listener-js">
+										<div class="form-social-networks__row">
+											<div class="form-social-networks__info">
+												<div class="form-social-networks__name _title-h5">Connect to VKontatke</div>
+												<div class="form-social-networks__descr _dark-2 _text-2">Connect account to log in with VKontakte</div>
+											</div>
+											<button type="button" class="form-social-networks__button button button_s button_grey button_social _item-js _active">
+												<span class="button__icon _icon-32"></span>
+												<span class="button__content"><span>Отключить</span><span>Подключить</span></span>
+											</button>
+										</div>
+										<div class="form-social-networks__row">
+											<div class="form-social-networks__info">
+												<div class="form-social-networks__name _title-h5">Connect to Google</div>
+												<div class="form-social-networks__descr _dark-2 _text-2">Connect account to log in with Google</div>
+											</div>
+											<button type="button" class="form-social-networks__button button button_s button_grey _item-js button_social">
+												<span class="button__icon">
+													<img src="img/icons/svg/google.svg" alt="">
+												</span>
+												<span class="button__content"><span>Отключить</span><span>Подключить</span></span>
+											</button>
+										</div>
+										<div class="form-social-networks__row">
+											<div class="form-social-networks__info">
+												<div class="form-social-networks__name _title-h5">Connect to Facebook</div>
+												<div class="form-social-networks__descr _dark-2 _text-2">Connect account to log in with Facebook</div>
+											</div>
+											<button type="button" class="form-social-networks__button button button_s button_grey _item-js button_social">
+												<span class="button__icon _icon-31">
+												</span>
+												<span class="button__content"><span>Отключить</span><span>Подключить</span></span>
+											</button>
+										</div>
+										<div class="form-social-networks__row">
+											<div class="form-social-networks__info">
+												<div class="form-social-networks__name _title-h5">Connect to Yandex</div>
+												<div class="form-social-networks__descr _dark-2 _text-2">Connect account to log in with Yandex</div>
+											</div>
+											<button type="button" class="form-social-networks__button button button_s button_grey _item-js button_social">
+												<span class="button__icon  _icon-47">
+												</span>
+												<span class="button__content"><span>Отключить</span><span>Подключить</span></span>
+											</button>
+										</div>
+									</form>
+									<div class="social-networks__footer">
+										<button type="submit" class="social-networks__button button button_s"><span>Сохранить изменения</span></button>
+									</div>
+								</section>
+								<!-- social-networks -->
+								<!-- alert-settings -->
+								<section class="alert-settings">
+									<h3 class="alert-settings__title">Настройки оповещений</h3>
+									<form action="#" class="alert-settings__form form-alert-settings">
+										<div class="form-alert-settings__row form-alert-settings__row_top">
+											<div class="form-alert-settings__item ">
+												<div class="form-alert-settings__title">Тип уведомления</div>
+											</div>
+											<div class="form-alert-settings__column">
+												<div class="form-alert-settings__header">
+													<div class="form-alert-settings__label">Email</div>
+													<button type="button" class="form-alert-settings__btn">разрешить</button>
+												</div>
+												<div class="form-alert-settings__header">
+													<div class="form-alert-settings__label">Браузер</div>
+													<button type="button" class="form-alert-settings__btn">запретить</button>
+												</div>
+												<div class="form-alert-settings__header">
+													<div class="form-alert-settings__label">Telegram</div>
+
+												</div>
+											</div>
+
+										</div>
+										<div class="form-alert-settings__row">
+											<div class="form-alert-settings__item">
+												<div class="form-alert-settings__name">В тикете новое сообщение</div>
+												<div class="form-alert-settings__descr">В вашем тикете появился новый ответ</div>
+											</div>
+											<div class="form-alert-settings__column">
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox _disabled">
+														<input disabled id="alert-settings_01" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_01" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox">
+														<input checked id="alert-settings_24" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_24" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox">
+														<input checked id="alert-settings_25" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_25" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="form-alert-settings__row">
+											<div class="form-alert-settings__item">
+												<div class="form-alert-settings__name">Совершен запрос на вывод средств</div>
+												<div class="form-alert-settings__descr">Мы получили от вас заявку на вывод средств</div>
+											</div>
+											<div class="form-alert-settings__column">
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox _disabled">
+														<input disabled id="alert-settings_02" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_02" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox">
+														<input checked id="alert-settings_03" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_03" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox">
+														<input checked id="alert-settings_04" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_04" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="form-alert-settings__row">
+											<div class="form-alert-settings__item">
+												<div class="form-alert-settings__name">Оформлен новый кэшбэк</div>
+												<div class="form-alert-settings__descr">Начат процесс получения кэшбэка по новому заказу</div>
+											</div>
+											<div class="form-alert-settings__column">
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox _disabled">
+														<input disabled id="alert-settings_05" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_05" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox">
+														<input id="alert-settings_06" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_06" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox">
+														<input checked id="alert-settings_07" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_07" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="form-alert-settings__row">
+											<div class="form-alert-settings__item">
+												<div class="form-alert-settings__name">Тикет закрыт</div>
+												<div class="form-alert-settings__descr">Ваш тикет был закрыт</div>
+											</div>
+											<div class="form-alert-settings__column">
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox _disabled">
+														<input disabled id="alert-settings_08" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_08" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox">
+														<input id="alert-settings_09" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_09" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox">
+														<input checked id="alert-settings_10" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_10" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="form-alert-settings__row">
+											<div class="form-alert-settings__item">
+												<div class="form-alert-settings__name">В тикете новое сообщение</div>
+												<div class="form-alert-settings__descr">В вашем тикете появился новый ответ</div>
+											</div>
+											<div class="form-alert-settings__column">
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox _disabled">
+														<input disabled id="alert-settings_11" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_11" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox">
+														<input checked id="alert-settings_12" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_12" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox">
+														<input checked id="alert-settings_13" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_13" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="form-alert-settings__row">
+											<div class="form-alert-settings__item">
+												<div class="form-alert-settings__name">Оформлен новый кэшбэк</div>
+												<div class="form-alert-settings__descr">Начат процесс получения кэшбэка по новому заказу</div>
+											</div>
+											<div class="form-alert-settings__column">
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox _disabled">
+														<input disabled id="alert-settings_14" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_14" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox">
+														<input id="alert-settings_15" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_15" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox">
+														<input checked id="alert-settings_16" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_16" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="form-alert-settings__row">
+											<div class="form-alert-settings__item">
+												<div class="form-alert-settings__name">Тикет закрыт</div>
+												<div class="form-alert-settings__descr">Ваш тикет был закрыт</div>
+											</div>
+											<div class="form-alert-settings__column">
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox _disabled">
+														<input disabled id="alert-settings_17" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_17" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox">
+														<input id="alert-settings_18" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_18" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox">
+														<input checked id="alert-settings_19" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_19" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="form-alert-settings__row">
+											<div class="form-alert-settings__item">
+												<div class="form-alert-settings__name">В тикете новое сообщение</div>
+												<div class="form-alert-settings__descr">В вашем тикете появился новый ответ</div>
+											</div>
+											<div class="form-alert-settings__column">
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox _disabled">
+														<input disabled id="alert-settings_21" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_21" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox">
+														<input checked id="alert-settings_22" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_22" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="form-alert-settings__checkbox ">
+													<div class=" checkbox">
+														<input checked id="alert-settings_23" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="alert-settings_23" class="checkbox__body">
+															<div tabindex="-1" class="checkbox__content">
+																<span tabindex="-1" class="checkbox__icon"></span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</form>
+									<div class="alert-settings__footer">
+										<button type="submit" class="alert-settings__button button button_s "><span>Сохранить изменения</span></button>
+									</div>
+								</section>
+								<!-- alert-settings -->
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

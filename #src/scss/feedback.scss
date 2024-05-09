@@ -1,0 +1,92 @@
+.feedback {
+	// .feedback__form
+	&__form {
+	}
+	// .feedback__message
+	&__message {
+	}
+}
+
+.form-feedback {
+	display: grid;
+	row-gap: 16px;
+	// .form-feedback__row
+	&__row {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+		column-gap: 30px;
+		row-gap: 16px;
+	}
+	// .form-feedback__input
+	&__input {
+	}
+
+	// .form-feedback__footer
+	&__footer {
+		display: grid;
+		row-gap: 24px;
+	}
+	// .form-feedback__check
+	&__check {
+	}
+	// .form-feedback__button
+	&__button {
+		justify-self: start;
+	}
+	@media (max-width: $md3+px) {
+		// .form-feedback__footer
+		&__footer {
+			row-gap: 16px;
+		}
+	}
+}
+
+.check {
+	text-align: left;
+	// .check__label
+	&__label {
+		display: inline-block;
+		@extend ._text-2;
+		color: $mid-1;
+		margin: 0px 0px 4px 0px;
+	}
+	// .check__line
+	&__line {
+		display: flex;
+		align-items: flex-start;
+		column-gap: 8px;
+	}
+	// .check__image
+	&__image {
+		flex: 0 0 152px;
+		height: 44px;
+		img {
+			display: block;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	&__error {
+		padding: 6px 0px 0px 0px;
+		color: $warning;
+		@extend ._text-2;
+	}
+	// .check__button
+	&__button {
+	}
+}
+
+.message-feedback {
+	display: grid;
+	row-gap: 24px;
+	// .message-feedback__text
+	&__text {
+	}
+	// .message-feedback__button
+	&__button {
+		justify-self: start;
+	}
+	@media (max-width: $md3+px) {
+		row-gap: 32px;
+	}
+}

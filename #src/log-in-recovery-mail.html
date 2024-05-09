@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Проверьте свой email"
+})
+
+<body>
+	<div class="wrapper wrapper_log-in">
+		@@include('_header.html',{})
+		@@include('_menu-down.html',{})
+		<main class="page ">
+			<div class="page__container _container">
+				<!-- login	 -->
+				<div class="login">
+					<div class="login__container">
+						<div class="login__decor">
+							<img src="img/log-in/01.png" alt="">
+						</div>
+						<div class="login__body">
+							<a href="#" class="login__logo _logo"><img src="img/logo.svg" alt="">FOODRATE</a>
+							<div class="login__block log-in log-in_registration">
+								<div class="log-in__recovery recovery-log-in">
+									<div class="recovery-log-in__header">
+										<h2 class="recovery-log-in__title">Проверьте свой email</h2>
+										<div class="recovery-log-in__descr _paragraph-2">
+											<p>
+												Для окончания регистрации вам достаточно перейти по ссылке в письме, которое мы только что отправили на вашу
+												почту. Обычно наши письма доставляются мгновенно и без каких-то проблем, но если письма нет в течение двух минут - можете
+												посмотреть в СПАМе. После перехода по ссылке - мы сражу же вас авторизуем и вы сможете полноценно пользоваться сервисом.
+											</p>
+											<p>Если вам лень сделать даже это - можете войти на сайт через социальные сети. Кнопочки для входа чуть ниже.</p>
+										</div>
+									</div>
+									<div class="recovery-log-in__socials socials">
+										<ul class="socials__list">
+											<li><a href="#" class="socials__item socials__item_f _icon-31"></a></li>
+											<li><a href="#" class="socials__item socials__item_vk _icon-32"></a></li>
+											<li><a href="#" class="socials__item socials__item_goo "><img src="img/icons/svg/google.svg" alt=""></a></li>
+											<li><a href="#" class="socials__item socials__item_ya _icon-47"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="login__text">Registering to this website, you accept our <a href="#" class="_link">Terms of Use</a> and our <a href="#" class="_link">Privacy Policy</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- login	 -->
+			</div>
+
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

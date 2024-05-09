@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Блюда и рационы"
+})
+
+<body>
+	<div class="wrapper ">
+		@@include('_header.html',{})
+		@@include('_menu-down.html',{})
+		<main class="page">
+			<div class="page__container _container ">
+				<div class="page__body ">
+					<div class="page__content">
+						<!-- breadcrumb -->
+						<div class="breadcrumb">
+							<ul class="breadcrumb__list">
+								<li><a href="#" class="breadcrumb__item">Главная</a></li>
+								<li><a href="#" class="breadcrumb__item">Личный кабинет</a></li>
+								<li><a class="breadcrumb__item">Блюда и рационы</a></li>
+							</ul>
+						</div>
+						<!-- breadcrumb -->
+
+					</div>
+					<div class="page__main  ">
+						<div class="page__nav ">
+							<div class="page__box">
+								<!-- profile -->
+								<div class="profile profile_company">
+									<div class="profile__header header-profile">
+										<div class="header-profile__avatar _avatar">
+											<div class="_avatar__image">
+												<img src="img/avatar.jpg" alt="">
+											</div>
+											<div class="_avatar__image">
+												<img src="img/avatar.jpg" alt="">
+											</div>
+											<ul class="_actions">
+												<li class="_actions__item"><a href="#" class="_actions__link _actions__link_foodrate _icon-61"></a></li>
+
+												<li class="_actions__item"><a href="#" class=" _actions__link _actions__link_offical _icon-62"></a></li>
+												<li class="_actions__item"><a href="#" class="_actions__link _actions__link_top _icon-10"></a></li>
+											</ul>
+										</div>
+										<div class="header-profile__info">
+											<div class="header-profile__name _title-h4">Константин Константинопольский</div>
+											<div class="header-profile__status _attention _text-1">Официальный представить GrowFood</div>
+										</div>
+									</div>
+									<div class="profile__center center-profile">
+										<div class="center-profile__balance _balance">
+											<span class="_balance__text _icon-63">Баланс:&nbsp;</span>
+											<span class="_balance__value">3 659 ₽</span>
+										</div>
+										<a href="#" class="center-profile__link _link">Пополнить</a>
+									</div>
+									<div class="profile__footer footer-profile">
+										<a href="mailto:konstantin_konstantinopolsky@gmail.com" class="footer-profile__item _icon-58">konstantin_konstantinopolsky@gmail.com</a>
+										<span class="footer-profile__item _icon-36">Зарегистрирован 20.09.2020</span>
+									</div>
+								</div>
+								<!-- profile -->
+								<!-- navigation -->
+								<nav class="navigation ">
+									<a href="#" class="navigation__button">
+										<div class="navigation__content-button">
+											<span class="navigation__icon _icon-18"></span>
+											<span class="navigation__name">Блюда и рационы</span>
+										</div>
+									</a>
+									<ul class="navigation__list">
+										<li class="navigation__item">
+											<a href="#" class="navigation__link ">
+												<span class="navigation__icon _icon-53"></span>
+												<span class="navigation__name">Аккаунт</span>
+											</a>
+										</li>
+										<li class="navigation__item">
+											<a href="#" class="navigation__link ">
+												<span class="navigation__icon _icon-02"></span>
+												<span class="navigation__name">Уведомления</span>
+											</a>
+										</li>
+										<li class="navigation__item">
+											<a href="# " class="navigation__link ">
+												<span class="navigation__icon _icon-54"></span>
+												<span class="navigation__name">Найстроки профиля</span>
+											</a>
+										</li>
+										<li class="navigation__item">
+											<a href="#" class="navigation__link ">
+												<span class="navigation__icon _icon-03"></span>
+												<span class="navigation__name">Избранное</span>
+											</a>
+										</li>
+										<li class="navigation__item">
+											<a href="#" class="navigation__link ">
+												<span class="navigation__icon _icon-66"></span>
+												<span class="navigation__name">Наши новости</span>
+											</a>
+										</li>
+										<li class="navigation__item">
+											<a href="#" class="navigation__link ">
+												<span class="navigation__icon _icon-21"></span>
+												<span class="navigation__name">Oбзоры и отзывы</span>
+											</a>
+										</li>
+										<li class="navigation__item">
+											<a href="#" class="navigation__link _active">
+												<span class="navigation__icon _icon-18"></span>
+												<span class="navigation__name">Блюда и рационы</span>
+											</a>
+										</li>
+										<li class="navigation__item">
+											<a href="#" class="navigation__link ">
+												<span class="navigation__icon _icon-67"></span>
+												<span class="navigation__name">Список сотрудников</span>
+											</a>
+										</li>
+										<li class="navigation__item">
+											<a href="#" class="navigation__link ">
+												<span class="navigation__icon _icon-13"></span>
+												<span class="navigation__name">Платные услуги</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+								<!-- navigation -->
+							</div>
+
+						</div>
+						<div class="page__section">
+							<div class="page__box">
+								<h1 data-da=".page__main,991.98,0">Блюда и рационы</h1>
+								<!-- meals -->
+								<div class="meals">
+									<div class="meals__sort">
+										<div class="sort">
+											<div class="sort__wrapper">
+												<a href="#" class="sort__link _active">Стандартное</a>
+												<a href="#" class="sort__link ">Вегетарианское</a>
+												<a href="#" class="sort__link ">Халяльное</a>
+												<a href="#diet-option" class=" sort__btn _popup-link ">Добавить</a>
+											</div>
+										</div>
+									</div>
+									<div class="meals__edting editng-meals">
+										<div class="editng-meals__header">
+											<h2 class="editng-meals__title">Стандартное</h2>
+											<div class="editng-meals__actions _actions-btn">
+												<a href="#" class="_actions-btn__button button-icon _icon-65"></a>
+												<a href="#" class="_actions-btn__button button-icon _icon-59"></a>
+											</div>
+
+										</div>
+									</div>
+									<div class="editng-meals__main main-editng-meals">
+										<div data-da=".header-editng-meals__list,991.98," class="main-editng-meals__days days-editng-meals">
+											<ul class="days-editng-meals__list">
+												<li class="days-editng-meals__item">
+													<a href="#" class="days-editng-meals__link">Понедельник</a>
+												</li>
+												<li class="days-editng-meals__item">
+													<a href="#" class="days-editng-meals__link">Вторник</a>
+												</li>
+												<li class="days-editng-meals__item">
+													<a href="#" class="days-editng-meals__link _active">Среда</a>
+												</li>
+												<li class="days-editng-meals__item">
+													<a href="#" class="days-editng-meals__link">Четверг</a>
+												</li>
+												<li class="days-editng-meals__item">
+													<a href="#" class="days-editng-meals__link">Пятница</a>
+												</li>
+												<li class="days-editng-meals__item">
+													<a href="#" class="days-editng-meals__link">Суббота</a>
+												</li>
+												<li class="days-editng-meals__item">
+													<a href="#" class="days-editng-meals__link">Воскресенье</a>
+												</li>
+											</ul>
+											<div class="days-editng-meals__footer">
+												<a href="#" class="days-editng-meals__btn _text-1 _link">Добавить день</a>
+											</div>
+										</div>
+										<div class="main-editng-meals__wrapper">
+											<div class="main-editng-meals__header header-editng-meals">
+												<div class="header-editng-meals__body">
+													<div class="header-editng-meals__content">
+														<div class="header-editng-meals__name _title-h3">Среда</div>
+														<div class="header-editng-meals__actions _actions-btn">
+															<a href="#" class="_actions-btn__button button-icon _icon-65"></a>
+															<a href="#" class="_actions-btn__button button-icon _icon-59"></a>
+														</div>
+													</div>
+													<button type="button" class="header-editng-meals__arrow"></button>
+												</div>
+												<div hidden class="header-editng-meals__list"></div>
+											</div>
+											<div class="main-editng-meals__body">
+												<div class="main-editng-meals__items">
+													<!-- item-editng-meals -->
+													<div class="main-editng-meals__item item-editng-meals">
+														<div class="item-editng-meals__image image-block image-block_4px image-block_radius-8">
+															<div class="image-block__image">
+																<img src="img/dish.jpg" alt="">
+															</div>
+															<div class="image-block__image">
+																<img src="img/dish.jpg" alt="">
+															</div>
+														</div>
+														<h4 class="item-editng-meals__name">Сэндвич с запеченой индейкой</h4>
+														<div class="item-editng-meals__actions">
+															<a href="#" class="item-editng-meals__button button button_grey button_s button_icon-only-big _icon-16"></a>
+															<a href="#create-dish" class="item-editng-meals__button button button_grey button_s button_icon-only-big _popup-link _icon-65"></a>
+														</div>
+														<div class="item-editng-meals__items">
+															<span class="item-editng-meals__item">658 ккал</span>
+															<span class="item-editng-meals__item"><span>Белки:&nbsp;</span>40 г</span>
+															<span class="item-editng-meals__item"><span>Жиры:&nbsp;</span>20 г</span>
+															<span class="item-editng-meals__item"><span>Углеводы:&nbsp;</span>50 г</span>
+
+														</div>
+
+													</div>
+													<!-- item-editng-meals -->
+													<!-- item-editng-meals -->
+													<div class="main-editng-meals__item item-editng-meals">
+														<div class="item-editng-meals__image image-block image-block_4px image-block_radius-8">
+															<div class="image-block__image">
+																<img src="img/dish.jpg" alt="">
+															</div>
+															<div class="image-block__image">
+																<img src="img/dish.jpg" alt="">
+															</div>
+														</div>
+														<h4 class="item-editng-meals__name">Сэндвич с запеченой индейкой</h4>
+														<div class="item-editng-meals__actions">
+															<a href="#" class="item-editng-meals__button button button_grey button_s button_icon-only-big _icon-16"></a>
+															<a href="#create-dish" class="item-editng-meals__button button button_grey button_s button_icon-only-big _popup-link _icon-65"></a>
+														</div>
+														<div class="item-editng-meals__items">
+															<span class="item-editng-meals__item">658 ккал</span>
+															<span class="item-editng-meals__item"><span>Белки:&nbsp;</span>40 г</span>
+															<span class="item-editng-meals__item"><span>Жиры:&nbsp;</span>20 г</span>
+															<span class="item-editng-meals__item"><span>Углеводы:&nbsp;</span>50 г</span>
+
+														</div>
+
+													</div>
+													<!-- item-editng-meals -->
+													<!-- item-editng-meals -->
+													<div class="main-editng-meals__item item-editng-meals">
+														<div class="item-editng-meals__image image-block image-block_4px image-block_radius-8">
+															<div class="image-block__image">
+																<img src="img/dish.jpg" alt="">
+															</div>
+															<div class="image-block__image">
+																<img src="img/dish.jpg" alt="">
+															</div>
+														</div>
+														<h4 class="item-editng-meals__name">Сэндвич с запеченой индейкой</h4>
+														<div class="item-editng-meals__actions">
+															<a href="#" class="item-editng-meals__button button button_grey button_s button_icon-only-big _icon-16"></a>
+															<a href="#create-dish" class="item-editng-meals__button button button_grey button_s button_icon-only-big _popup-link _icon-65"></a>
+														</div>
+														<div class="item-editng-meals__items">
+															<span class="item-editng-meals__item">658 ккал</span>
+															<span class="item-editng-meals__item"><span>Белки:&nbsp;</span>40 г</span>
+															<span class="item-editng-meals__item"><span>Жиры:&nbsp;</span>20 г</span>
+															<span class="item-editng-meals__item"><span>Углеводы:&nbsp;</span>50 г</span>
+
+														</div>
+
+													</div>
+													<!-- item-editng-meals -->
+													<!-- item-editng-meals -->
+													<div class="main-editng-meals__item item-editng-meals">
+														<div class="item-editng-meals__image image-block image-block_4px image-block_radius-8">
+															<div class="image-block__image">
+																<img src="img/dish.jpg" alt="">
+															</div>
+															<div class="image-block__image">
+																<img src="img/dish.jpg" alt="">
+															</div>
+														</div>
+														<h4 class="item-editng-meals__name">Сэндвич с запеченой индейкой</h4>
+														<div class="item-editng-meals__actions">
+															<a href="#" class="item-editng-meals__button button button_grey button_s button_icon-only-big _icon-16"></a>
+															<a href="#create-dish" class="item-editng-meals__button button button_grey button_s button_icon-only-big _popup-link _icon-65"></a>
+														</div>
+														<div class="item-editng-meals__items">
+															<span class="item-editng-meals__item">658 ккал</span>
+															<span class="item-editng-meals__item"><span>Белки:&nbsp;</span>40 г</span>
+															<span class="item-editng-meals__item"><span>Жиры:&nbsp;</span>20 г</span>
+															<span class="item-editng-meals__item"><span>Углеводы:&nbsp;</span>50 г</span>
+
+														</div>
+
+													</div>
+													<!-- item-editng-meals -->
+													<!-- item-editng-meals -->
+													<div class="main-editng-meals__item item-editng-meals">
+														<div class="item-editng-meals__image image-block image-block_4px image-block_radius-8">
+															<div class="image-block__image">
+																<img src="img/dish.jpg" alt="">
+															</div>
+															<div class="image-block__image">
+																<img src="img/dish.jpg" alt="">
+															</div>
+														</div>
+														<h4 class="item-editng-meals__name">Сэндвич с запеченой индейкой</h4>
+														<div class="item-editng-meals__actions">
+															<a href="#" class="item-editng-meals__button button button_grey button_s button_icon-only-big _icon-16"></a>
+															<a href="#create-dish" class="item-editng-meals__button button button_grey button_s button_icon-only-big _popup-link _icon-65"></a>
+														</div>
+														<div class="item-editng-meals__items">
+															<span class="item-editng-meals__item">658 ккал</span>
+															<span class="item-editng-meals__item"><span>Белки:&nbsp;</span>40 г</span>
+															<span class="item-editng-meals__item"><span>Жиры:&nbsp;</span>20 г</span>
+															<span class="item-editng-meals__item"><span>Углеводы:&nbsp;</span>50 г</span>
+
+														</div>
+
+													</div>
+													<!-- item-editng-meals -->
+												</div>
+												<div class="main-editng-meals__footer">
+													<a href="#" class="main-editng-meals__button main-editng-meals__button_add button button_s  button_grey-green">Добавить блюдо</a>
+													<a href="#create-dish" class="main-editng-meals__button button button_s  button_grey-green _popup-link">Создать блюдо</a>
+												</div>
+												<div hidden class="main-editng-meals__add-dish ">
+													<div class="add-dish-editng-meals">
+														<h3 class="add-dish-editng-meals__title">Добавить блюдо</h3>
+														<form action="#" class="add-dish-editng-meals__search form-add-dish">
+															<div class="form-add-dish__input input ">
+																<label for="search-add-dish_01" class="input__label">Поиск по справочнику блюд</label>
+																<div class="input__line ">
+																	<input id="search-add-dish_01" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Начните вводить название блюда" class="input__value ">
+																	<button type="button" class="input__button _icon-07"></button>
+																</div>
+															</div>
+
+															<button type="submit" class="form-add-dish__cancellation button button_s button_p12 button_grey">Отменить</button>
+
+														</form>
+														<div class="add-dish-editng-meals__results results-add-dish">
+															<div class="results-add-dish__items">
+																<div class="results-add-dish__item item-editng-meals">
+																	<div class="item-editng-meals__image image-block image-block_4px image-block_radius-8">
+																		<div class="image-block__image">
+																			<img src="img/dish.jpg" alt="">
+																		</div>
+																		<div class="image-block__image">
+																			<img src="img/dish.jpg" alt="">
+																		</div>
+																	</div>
+																	<h4 class="item-editng-meals__name">Паста с говядиной в томатном соусе с маслинами</h4>
+																	<div class="item-editng-meals__actions">
+																		<a href="#" class="item-editng-meals__button button button_green   button_s button_icon-only-big _icon-16"></a>
+
+																	</div>
+																	<div class="item-editng-meals__items">
+																		<span class="item-editng-meals__item">658 ккал</span>
+																		<span class="item-editng-meals__item"><span>Белки:&nbsp;</span>40 г</span>
+																		<span class="item-editng-meals__item"><span>Жиры:&nbsp;</span>20 г</span>
+																		<span class="item-editng-meals__item"><span>Углеводы:&nbsp;</span>50 г</span>
+
+																	</div>
+																</div>
+																<div class="results-add-dish__item item-editng-meals">
+																	<div class="item-editng-meals__image image-block image-block_4px image-block_radius-8">
+																		<div class="image-block__image">
+																			<img src="img/dish.jpg" alt="">
+																		</div>
+																		<div class="image-block__image">
+																			<img src="img/dish.jpg" alt="">
+																		</div>
+																	</div>
+																	<h4 class="item-editng-meals__name">Паста с говядиной в томатном соусе с маслинами</h4>
+																	<div class="item-editng-meals__actions">
+																		<a href="#" class="item-editng-meals__button button button_green   button_s button_icon-only-big _icon-16"></a>
+
+																	</div>
+																	<div class="item-editng-meals__items">
+																		<span class="item-editng-meals__item">658 ккал</span>
+																		<span class="item-editng-meals__item"><span>Белки:&nbsp;</span>40 г</span>
+																		<span class="item-editng-meals__item"><span>Жиры:&nbsp;</span>20 г</span>
+																		<span class="item-editng-meals__item"><span>Углеводы:&nbsp;</span>50 г</span>
+
+																	</div>
+																</div>
+																<div class="results-add-dish__item item-editng-meals">
+																	<div class="item-editng-meals__image image-block image-block_4px image-block_radius-8">
+																		<div class="image-block__image">
+																			<img src="img/dish.jpg" alt="">
+																		</div>
+																		<div class="image-block__image">
+																			<img src="img/dish.jpg" alt="">
+																		</div>
+																	</div>
+																	<h4 class="item-editng-meals__name">Паста с говядиной в томатном соусе с маслинами</h4>
+																	<div class="item-editng-meals__actions">
+																		<a href="#" class="item-editng-meals__button button button_green   button_s button_icon-only-big _icon-16"></a>
+
+																	</div>
+																	<div class="item-editng-meals__items">
+																		<span class="item-editng-meals__item">658 ккал</span>
+																		<span class="item-editng-meals__item"><span>Белки:&nbsp;</span>40 г</span>
+																		<span class="item-editng-meals__item"><span>Жиры:&nbsp;</span>20 г</span>
+																		<span class="item-editng-meals__item"><span>Углеводы:&nbsp;</span>50 г</span>
+
+																	</div>
+																</div>
+																<div class="results-add-dish__item item-editng-meals">
+																	<div class="item-editng-meals__image image-block image-block_4px image-block_radius-8">
+																		<div class="image-block__image">
+																			<img src="img/dish.jpg" alt="">
+																		</div>
+																		<div class="image-block__image">
+																			<img src="img/dish.jpg" alt="">
+																		</div>
+																	</div>
+																	<h4 class="item-editng-meals__name">Паста с говядиной в томатном соусе с маслинами</h4>
+																	<div class="item-editng-meals__actions">
+																		<a href="#" class="item-editng-meals__button button button_green   button_s button_icon-only-big _icon-16"></a>
+
+																	</div>
+																	<div class="item-editng-meals__items">
+																		<span class="item-editng-meals__item">658 ккал</span>
+																		<span class="item-editng-meals__item"><span>Белки:&nbsp;</span>40 г</span>
+																		<span class="item-editng-meals__item"><span>Жиры:&nbsp;</span>20 г</span>
+																		<span class="item-editng-meals__item"><span>Углеводы:&nbsp;</span>50 г</span>
+
+																	</div>
+																</div>
+																<div class="results-add-dish__item item-editng-meals">
+																	<div class="item-editng-meals__image image-block image-block_4px image-block_radius-8">
+																		<div class="image-block__image">
+																			<img src="img/dish.jpg" alt="">
+																		</div>
+																		<div class="image-block__image">
+																			<img src="img/dish.jpg" alt="">
+																		</div>
+																	</div>
+																	<h4 class="item-editng-meals__name">Паста с говядиной в томатном соусе с маслинами</h4>
+																	<div class="item-editng-meals__actions">
+																		<a href="#" class="item-editng-meals__button button button_green   button_s button_icon-only-big _icon-16"></a>
+
+																	</div>
+																	<div class="item-editng-meals__items">
+																		<span class="item-editng-meals__item">658 ккал</span>
+																		<span class="item-editng-meals__item"><span>Белки:&nbsp;</span>40 г</span>
+																		<span class="item-editng-meals__item"><span>Жиры:&nbsp;</span>20 г</span>
+																		<span class="item-editng-meals__item"><span>Углеводы:&nbsp;</span>50 г</span>
+
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- meals -->
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Часто задаваемые вопросы"
+})
+
+<body>
+	<div class="wrapper ">
+		@@include('_header.html',{})
+		@@include('_menu-down.html',{})
+		<main class="page">
+			<div class="page__container _container ">
+				<div class="page__body ">
+					<div class="page__content">
+						<!-- breadcrumb -->
+						<div class="breadcrumb">
+							<ul class="breadcrumb__list">
+								<li><a href="#" class="breadcrumb__item">Главная</a></li>
+								<li><a class="breadcrumb__item">Рейтинг</a></li>
+							</ul>
+						</div>
+						<!-- breadcrumb -->
+						<!-- rank -->
+						<section class="rank">
+							<div class="rank__header ">
+								<div class="rank__top">
+									<h1 class="rank__title">Рейтинг</h1>
+									<a href="#" class="rank__link">Как расчитывается рейтинг?</a>
+								</div>
+								<div class="rank__sort ">
+									<div class="sort">
+										<div class="sort__wrapper">
+											<a href="#" class="sort__link _active">Сервисы</a>
+											<a href="#" class="sort__link ">Рационы для похудения</a>
+											<a href="#" class="sort__link">Рационы для поддержания</a>
+											<a href="#" class="sort__link">Рационы для набора массы</a>
+											<a href="#" class="sort__link">Товары</a>
+											<a href="#" class="sort__link">Статьи</a>
+											<a href="#" class="sort__link">Пользователи</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="rank__main main-rank">
+								<div class="main-rank__switcher">
+									<div class=" switcher ">
+										<div class="switcher__main">
+											<input id="main-rank_1" data-error="Ошибка" class="switcher__input" type="checkbox" value="1" name="form[]">
+											<label for="main-rank_1" class="switcher__body">
+												<span class="switcher__icon"><span></span></span>
+											</label>
+										</div>
+										<div class="switcher__descr _body">Показывать только доступные в моём городе</div>
+									</div>
+								</div>
+								<div class="main-rank__table table-rank">
+									<div class="table-rank__body _absolut-wrapper">
+										<!--row title -->
+										<div class="table-rank__row _absolut-block">
+											<div class="table-rank__title">Место</div>
+											<div class="table-rank__title">Сервис</div>
+											<div class="table-rank__title">Рейтинг</div>
+											<div class="table-rank__title">комментарии</div>
+											<div class="table-rank__title">Обзоры</div>
+											<div class="table-rank__title"></div>
+										</div>
+										<!--row title -->
+										<!-- row -->
+										<div class="table-rank__row">
+											<div class="table-rank__place place-table-rank">
+												<span class="place-table-rank__namber  _text-1 _bold">1</span>
+												<span class="place-table-rank__rating  _text-1 _bold _success">3</span>
+											</div>
+											<div class="table-rank__service service-table-rank">
+												<a href="#" class="service-table-rank__image image-block image-block_radius-8 image-block_4px">
+													<div class="image-block__image">
+														<img src="img/dish.jpg" alt="">
+													</div>
+													<div class="image-block__image">
+														<img src="img/dish.jpg" alt="">
+													</div>
+												</a>
+												<a href="#" class="service-table-rank__name _hover _text-1 _bold">Grow Food</a>
+											</div>
+											<div class="table-rank__ratings">
+												<div class="ratings">
+													<div class="ratings__value">4.68</div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating.svg" alt=""></div>
+												</div>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value  _text-2 _icon-15">143K</a>
+												<span class="items-table-rank__added _text-2 _success">+45</span>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value _text-2 _icon-14">43</a>
+												<span class="items-table-rank__added _text-2 _success">+3</span>
+											</div>
+											<div class="table-rank__actions actions-table-rank">
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-04"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-03 _button-favorites"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey ">Подробнее</a>
+											</div>
+										</div>
+										<!-- row -->
+										<!-- row -->
+										<div class="table-rank__row">
+											<div class="table-rank__place place-table-rank">
+												<span class="place-table-rank__namber  _text-1 _bold">2</span>
+												<span class="place-table-rank__rating  _text-1 _bold _success">1</span>
+											</div>
+											<div class="table-rank__service service-table-rank">
+												<a href="#" class="service-table-rank__image image-block image-block_radius-8 image-block_4px">
+													<div class="image-block__image">
+														<img src="img/info-block/02.jpg" alt="">
+													</div>
+													<div class="image-block__image">
+														<img src="img/info-block/02.jpg" alt="">
+													</div>
+												</a>
+												<a href="#" class="service-table-rank__name _hover _text-1 _bold">Performance Food</a>
+											</div>
+											<div class="table-rank__ratings">
+												<div class="ratings">
+													<div class="ratings__value">4.68</div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating.svg" alt=""></div>
+												</div>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value  _text-2 _icon-15">143K</a>
+												<span class="items-table-rank__added _text-2 _success">+45</span>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value _text-2 _icon-14">43</a>
+												<span class="items-table-rank__added _text-2 _success">+3</span>
+											</div>
+											<div class="table-rank__actions actions-table-rank">
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-04"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-03 _button-favorites"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey ">Подробнее</a>
+											</div>
+										</div>
+										<!-- row -->
+										<!-- row -->
+										<div class="table-rank__row">
+											<div class="table-rank__place place-table-rank">
+												<span class="place-table-rank__namber  _text-1 _bold">3</span>
+												<span class="place-table-rank__rating  _text-1 _bold _fail">2</span>
+											</div>
+											<div class="table-rank__service service-table-rank">
+												<a href="#" class="service-table-rank__image image-block image-block_radius-8 image-block_4px">
+													<div class="image-block__image">
+														<img src="img/info-block/03.jpg" alt="">
+													</div>
+													<div class="image-block__image">
+														<img src="img/info-block/03.jpg" alt="">
+													</div>
+												</a>
+												<a href="#" class="service-table-rank__name _hover _text-1 _bold">Performance Food</a>
+											</div>
+											<div class="table-rank__ratings">
+												<div class="ratings">
+													<div class="ratings__value">4.68</div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating.svg" alt=""></div>
+												</div>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value  _text-2 _icon-15">143K</a>
+												<span class="items-table-rank__added _text-2 _success">+45</span>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value _text-2 _icon-14">43</a>
+												<span class="items-table-rank__added _text-2 _success">+3</span>
+											</div>
+											<div class="table-rank__actions actions-table-rank">
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-04"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-03 _button-favorites"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey ">Подробнее</a>
+											</div>
+										</div>
+										<!-- row -->
+										<!-- row -->
+										<div class="table-rank__row">
+											<div class="table-rank__place place-table-rank">
+												<span class="place-table-rank__namber  _text-1 _bold">4</span>
+												<span class="place-table-rank__rating  _text-1 _bold _success">3</span>
+											</div>
+											<div class="table-rank__service service-table-rank">
+												<a href="#" class="service-table-rank__image image-block image-block_radius-8 image-block_4px">
+													<div class="image-block__image">
+														<img src="img/dish.jpg" alt="">
+													</div>
+													<div class="image-block__image">
+														<img src="img/dish.jpg" alt="">
+													</div>
+												</a>
+												<a href="#" class="service-table-rank__name _hover _text-1 _bold">Grow Food</a>
+											</div>
+											<div class="table-rank__ratings">
+												<div class="ratings">
+													<div class="ratings__value">4.68</div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating.svg" alt=""></div>
+												</div>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value  _text-2 _icon-15">143K</a>
+												<span class="items-table-rank__added _text-2 _success">+45</span>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value _text-2 _icon-14">43</a>
+												<span class="items-table-rank__added _text-2 _success">+3</span>
+											</div>
+											<div class="table-rank__actions actions-table-rank">
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-04"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-03 _button-favorites"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey ">Подробнее</a>
+											</div>
+										</div>
+										<!-- row -->
+										<!-- row -->
+										<div class="table-rank__row">
+											<div class="table-rank__place place-table-rank">
+												<span class="place-table-rank__namber  _text-1 _bold">5</span>
+												<span class="place-table-rank__rating  _text-1 _bold _success">1</span>
+											</div>
+											<div class="table-rank__service service-table-rank">
+												<a href="#" class="service-table-rank__image image-block image-block_radius-8 image-block_4px">
+													<div class="image-block__image">
+														<img src="img/info-block/02.jpg" alt="">
+													</div>
+													<div class="image-block__image">
+														<img src="img/info-block/02.jpg" alt="">
+													</div>
+												</a>
+												<a href="#" class="service-table-rank__name _hover _text-1 _bold">Performance Food</a>
+											</div>
+											<div class="table-rank__ratings">
+												<div class="ratings">
+													<div class="ratings__value">4.68</div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating.svg" alt=""></div>
+												</div>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value  _text-2 _icon-15">143K</a>
+												<span class="items-table-rank__added _text-2 _success">+45</span>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value _text-2 _icon-14">43</a>
+												<span class="items-table-rank__added _text-2 _success">+3</span>
+											</div>
+											<div class="table-rank__actions actions-table-rank">
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-04"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-03 _button-favorites"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey ">Подробнее</a>
+											</div>
+										</div>
+										<!-- row -->
+										<!-- row -->
+										<div class="table-rank__row">
+											<div class="table-rank__place place-table-rank">
+												<span class="place-table-rank__namber  _text-1 _bold">6</span>
+												<span class="place-table-rank__rating  _text-1 _bold _fail">2</span>
+											</div>
+											<div class="table-rank__service service-table-rank">
+												<a href="#" class="service-table-rank__image image-block image-block_radius-8 image-block_4px">
+													<div class="image-block__image">
+														<img src="img/info-block/03.jpg" alt="">
+													</div>
+													<div class="image-block__image">
+														<img src="img/info-block/03.jpg" alt="">
+													</div>
+												</a>
+												<a href="#" class="service-table-rank__name _hover _text-1 _bold">Performance Food</a>
+											</div>
+											<div class="table-rank__ratings">
+												<div class="ratings">
+													<div class="ratings__value">4.68</div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating.svg" alt=""></div>
+												</div>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value  _text-2 _icon-15">143K</a>
+												<span class="items-table-rank__added _text-2 _success">+45</span>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value _text-2 _icon-14">43</a>
+												<span class="items-table-rank__added _text-2 _success">+3</span>
+											</div>
+											<div class="table-rank__actions actions-table-rank">
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-04"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-03 _button-favorites"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey ">Подробнее</a>
+											</div>
+										</div>
+										<!-- row -->
+										<!-- row -->
+										<div class="table-rank__row">
+											<div class="table-rank__place place-table-rank">
+												<span class="place-table-rank__namber  _text-1 _bold">7</span>
+												<span class="place-table-rank__rating  _text-1 _bold _success">3</span>
+											</div>
+											<div class="table-rank__service service-table-rank">
+												<a href="#" class="service-table-rank__image image-block image-block_radius-8 image-block_4px">
+													<div class="image-block__image">
+														<img src="img/dish.jpg" alt="">
+													</div>
+													<div class="image-block__image">
+														<img src="img/dish.jpg" alt="">
+													</div>
+												</a>
+												<a href="#" class="service-table-rank__name _hover _text-1 _bold">Grow Food</a>
+											</div>
+											<div class="table-rank__ratings">
+												<div class="ratings">
+													<div class="ratings__value">4.68</div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating.svg" alt=""></div>
+												</div>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value  _text-2 _icon-15">143K</a>
+												<span class="items-table-rank__added _text-2 _success">+45</span>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value _text-2 _icon-14">43</a>
+												<span class="items-table-rank__added _text-2 _success">+3</span>
+											</div>
+											<div class="table-rank__actions actions-table-rank">
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-04"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-03 _button-favorites"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey ">Подробнее</a>
+											</div>
+										</div>
+										<!-- row -->
+										<!-- row -->
+										<div class="table-rank__row">
+											<div class="table-rank__place place-table-rank">
+												<span class="place-table-rank__namber  _text-1 _bold">8</span>
+												<span class="place-table-rank__rating  _text-1 _bold _success">1</span>
+											</div>
+											<div class="table-rank__service service-table-rank">
+												<a href="#" class="service-table-rank__image image-block image-block_radius-8 image-block_4px">
+													<div class="image-block__image">
+														<img src="img/info-block/02.jpg" alt="">
+													</div>
+													<div class="image-block__image">
+														<img src="img/info-block/02.jpg" alt="">
+													</div>
+												</a>
+												<a href="#" class="service-table-rank__name _hover _text-1 _bold">Performance Food</a>
+											</div>
+											<div class="table-rank__ratings">
+												<div class="ratings">
+													<div class="ratings__value">4.68</div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating.svg" alt=""></div>
+												</div>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value  _text-2 _icon-15">143K</a>
+												<span class="items-table-rank__added _text-2 _success">+45</span>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value _text-2 _icon-14">43</a>
+												<span class="items-table-rank__added _text-2 _success">+3</span>
+											</div>
+											<div class="table-rank__actions actions-table-rank">
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-04"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-03 _button-favorites"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey ">Подробнее</a>
+											</div>
+										</div>
+										<!-- row -->
+										<!-- row -->
+										<div class="table-rank__row">
+											<div class="table-rank__place place-table-rank">
+												<span class="place-table-rank__namber  _text-1 _bold">9</span>
+												<span class="place-table-rank__rating  _text-1 _bold _fail">2</span>
+											</div>
+											<div class="table-rank__service service-table-rank">
+												<a href="#" class="service-table-rank__image image-block image-block_radius-8 image-block_4px">
+													<div class="image-block__image">
+														<img src="img/info-block/03.jpg" alt="">
+													</div>
+													<div class="image-block__image">
+														<img src="img/info-block/03.jpg" alt="">
+													</div>
+												</a>
+												<a href="#" class="service-table-rank__name _hover _text-1 _bold">Performance Food</a>
+											</div>
+											<div class="table-rank__ratings">
+												<div class="ratings">
+													<div class="ratings__value">4.68</div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating.svg" alt=""></div>
+												</div>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value  _text-2 _icon-15">143K</a>
+												<span class="items-table-rank__added _text-2 _success">+45</span>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value _text-2 _icon-14">43</a>
+												<span class="items-table-rank__added _text-2 _success">+3</span>
+											</div>
+											<div class="table-rank__actions actions-table-rank">
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-04"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-03 _button-favorites"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey ">Подробнее</a>
+											</div>
+										</div>
+										<!-- row -->
+										<!-- row -->
+										<div class="table-rank__row">
+											<div class="table-rank__place place-table-rank">
+												<span class="place-table-rank__namber  _text-1 _bold">10</span>
+												<span class="place-table-rank__rating  _text-1 _bold _success">3</span>
+											</div>
+											<div class="table-rank__service service-table-rank">
+												<a href="#" class="service-table-rank__image image-block image-block_radius-8 image-block_4px">
+													<div class="image-block__image">
+														<img src="img/dish.jpg" alt="">
+													</div>
+													<div class="image-block__image">
+														<img src="img/dish.jpg" alt="">
+													</div>
+												</a>
+												<a href="#" class="service-table-rank__name _hover _text-1 _bold">Grow Food</a>
+											</div>
+											<div class="table-rank__ratings">
+												<div class="ratings">
+													<div class="ratings__value">4.68</div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating.svg" alt=""></div>
+												</div>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value  _text-2 _icon-15">143K</a>
+												<span class="items-table-rank__added _text-2 _success">+45</span>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value _text-2 _icon-14">43</a>
+												<span class="items-table-rank__added _text-2 _success">+3</span>
+											</div>
+											<div class="table-rank__actions actions-table-rank">
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-04"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-03 _button-favorites"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey ">Подробнее</a>
+											</div>
+										</div>
+										<!-- row -->
+										<!-- row -->
+										<div class="table-rank__row">
+											<div class="table-rank__place place-table-rank">
+												<span class="place-table-rank__namber  _text-1 _bold">11</span>
+												<span class="place-table-rank__rating  _text-1 _bold _success">1</span>
+											</div>
+											<div class="table-rank__service service-table-rank">
+												<a href="#" class="service-table-rank__image image-block image-block_radius-8 image-block_4px">
+													<div class="image-block__image">
+														<img src="img/info-block/02.jpg" alt="">
+													</div>
+													<div class="image-block__image">
+														<img src="img/info-block/02.jpg" alt="">
+													</div>
+												</a>
+												<a href="#" class="service-table-rank__name _hover _text-1 _bold">Performance Food</a>
+											</div>
+											<div class="table-rank__ratings">
+												<div class="ratings">
+													<div class="ratings__value">4.68</div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating.svg" alt=""></div>
+												</div>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value  _text-2 _icon-15">143K</a>
+												<span class="items-table-rank__added _text-2 _success">+45</span>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value _text-2 _icon-14">43</a>
+												<span class="items-table-rank__added _text-2 _success">+3</span>
+											</div>
+											<div class="table-rank__actions actions-table-rank">
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-04"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-03 _button-favorites"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey ">Подробнее</a>
+											</div>
+										</div>
+										<!-- row -->
+										<!-- row -->
+										<div class="table-rank__row">
+											<div class="table-rank__place place-table-rank">
+												<span class="place-table-rank__namber  _text-1 _bold">12</span>
+												<span class="place-table-rank__rating  _text-1 _bold _fail">2</span>
+											</div>
+											<div class="table-rank__service service-table-rank">
+												<a href="#" class="service-table-rank__image image-block image-block_radius-8 image-block_4px">
+													<div class="image-block__image">
+														<img src="img/info-block/03.jpg" alt="">
+													</div>
+													<div class="image-block__image">
+														<img src="img/info-block/03.jpg" alt="">
+													</div>
+												</a>
+												<a href="#" class="service-table-rank__name _hover _text-1 _bold">Performance Food</a>
+											</div>
+											<div class="table-rank__ratings">
+												<div class="ratings">
+													<div class="ratings__value">4.68</div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating_active.svg" alt=""></div>
+													<div class="ratings__item"><img src="img/icons/rating.svg" alt=""></div>
+												</div>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value  _text-2 _icon-15">143K</a>
+												<span class="items-table-rank__added _text-2 _success">+45</span>
+											</div>
+											<div class="table-rank__items items-table-rank">
+												<a href="#" class="items-table-rank__value _text-2 _icon-14">43</a>
+												<span class="items-table-rank__added _text-2 _success">+3</span>
+											</div>
+											<div class="table-rank__actions actions-table-rank">
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-04"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey button_icon-only-big _icon-03 _button-favorites"></a>
+												<a href="#" class="actions-table-rank__btn button button_s button_grey ">Подробнее</a>
+											</div>
+										</div>
+										<!-- row -->
+									</div>
+								</div>
+								<div class="main-rank__pagging">
+									<div class=" _pagging _pagging_start">
+										<ul class="_pagging__list">
+											<li>
+												<a href="#" class="_pagging__arrow _pagging__arrow_prev  _icon-35"></a>
+											</li>
+											<li>
+												<a href="" class="_pagging__item  _active">1</a>
+											</li>
+											<li>
+												<a href="" class="_pagging__item ">2</a>
+											</li>
+											<li>
+												<a href="" class="_pagging__item ">3</a>
+											</li>
+											<li>
+												<a href="" class="_pagging__item _pagging__item_points  "><span>...</span></a>
+											</li>
+											<li>
+												<a href="" class="_pagging__item ">36</a>
+											</li>
+											<li>
+												<a href="#" class="_pagging__arrow _pagging__arrow_next  _icon-35"></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- rank -->
+
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

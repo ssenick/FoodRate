@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Блог новая запись"
+})
+
+<body>
+	<div class="wrapper ">
+		@@include('_header.html',{})
+		@@include('_menu-down.html',{})
+		<main class="page">
+			<div class="page__container _container ">
+				<div class="page__body ">
+					<!-- blog-form-post -->
+					<form action="#" class="blog-form-post">
+						<!-- blog-form-post__section -->
+						<div class="blog-form-post__section">
+							<h2 class="blog-form-post__title">
+								Заголовок записи блога, анонс и картинка превью
+							</h2>
+							<div class="blog-form-post__input input">
+								<label for="nb_1" class="input__label _text-1">Заголовок изображения</label>
+								<div class="input__line ">
+									<input id="nb_1" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Введите заголовок" value="" class="input__value">
+								</div>
+							</div>
+							<div class="blog-form-post__add add-comment-files add-comment-files_plus ">
+								<div class="add-comment-files__content">
+									<div class="add-comment-files__icon _icon-75"></div>
+									<div class="add-comment-files__body add-comment-files__body_left">
+										<div class="add-comment-files__title _paragraph-1">Перетащите сюда файлы или <span>кликните</span></div>
+										<div class="add-comment-files__label _paragraph-2">Максимальный размер 1,5 Мб, jpg или png</div>
+									</div>
+								</div>
+								<input class="add-comment-files__input" accept=".jpg, .png" type="file" multiple="">
+							</div>
+							<div class="blog-form-post__input input">
+								<label for="nb_2" class="input__label _text-1">Описание изображения</label>
+								<div class="input__line input__line_area input__line_area_94">
+									<textarea id="nb_2" maxlength="110" autocomplete="off" name="form[]" data-value="Введите описание (не более 110 символов)" data-error="Ошибка" class="input__value _counter-input-2"></textarea>
+								</div>
+								<div class="input__footer _flex _flex_jc-sb">
+									<span class="input__span-value _dark-2  _text-2"><span class="_counter-value">0</span>/110</span>
+									<span class="input__span-value _dark-2 _text-2">Описание выводится внизу фотографии</span>
+								</div>
+
+							</div>
+						</div>
+						<!-- blog-form-post__section -->
+						<!-- blog-form-post__section -->
+						<div class="blog-form-post__section">
+							<div class="blog-form-post__add add-posts">
+								<button type="button" class="add-posts__content">
+									<div class="add-posts__plus">
+										<div class="add-posts__icon _icon-75"></div>
+									</div>
+									<span class="add-posts__text _paragraph-1">Добавить блок</span>
+								</button>
+
+							</div>
+						</div>
+						<!-- blog-form-post__section -->
+						<!-- blog-form-post__section -->
+						<div class="blog-form-post__section">
+							<div class="blog-form-post__add add-all-posts">
+								<div class="add-all-posts__content">
+									<div class="add-all-posts__plus">
+										<div class="add-all-posts__icon _icon-75"></div>
+										<span class="_paragraph-1">Добавить блок</span>
+									</div>
+									<div class="add-all-posts__body">
+										<div class="add-all-posts__buttons">
+											<button type="button" class="add-all-posts__button button button_xs button_green  button_icon "><span> <img src="img/blog/icons/heading.svg" alt="">Заголовок</span></button>
+											<button type="button" class="add-all-posts__button button button_xs button_green button_icon "><span> <img src="img/blog/icons/txt-block.svg" alt="">Текстовый блок</span></button>
+											<button type="button" class="add-all-posts__button button button_xs button_green button_icon "><span> <img src="img/blog/icons/gallery.svg" alt="">Галерея</span></button>
+											<button type="button" class="add-all-posts__button button button_xs button_green button_icon "><span> <img src="img/blog/icons/photo.svg" alt="">Одиночное изображение</span></button>
+											<button type="button" class="add-all-posts__button button button_xs button_green button_icon "><span> <img src="img/blog/icons/notabene.svg" alt="">Сноска</span></button>
+											<button type="button" class="add-all-posts__button button button_xs button_green button_icon "><span> <img src="img/blog/icons/video.svg" alt="">Объект по ссылке</span></button>
+											<button type="button" class="add-all-posts__button button button_xs button_green button_icon "><span> <img src="img/blog/icons/divider.svg" alt="">Разрыв страницы</span></button>
+											<button type="button" class="add-all-posts__button button button_xs button_green button_icon "><span> <img src="img/blog/icons/quote.svg" alt="">Цитата</span></button>
+											<button type="button" class="add-all-posts__button button button_xs button_green button_icon "><span> <img src="img/blog/icons/table.svg" alt="">Таблица</span></button>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<!-- blog-form-post__section -->
+						<!-- blog-form-post__section -->
+						<div class="blog-form-post__section">
+							<div class="blog-form-post__actions actions-blog-post">
+								<button type="button" class="actions-blog-post__button button_p12 button_grey button_h44 button"><span>Удалить запись</span></button>
+								<button type="button" class="actions-blog-post__button button_p12 button_grey button_h44 button"><span>Предложить как новость</span></button>
+								<button type="button" class="actions-blog-post__button button_p12 button_grey button_h44 button"><span>Предварительный просмотр</span></button>
+								<button type="submit" class="actions-blog-post__button button_p12 button_green button_h44 button "><span>Сохранить</span></button>
+							</div>
+						</div>
+						<!-- blog-form-post__section -->
+					</form>
+					<!-- blog-form-post -->
+				</div>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>
