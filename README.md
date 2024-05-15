@@ -2,7 +2,6 @@
 
 DEMO: https://foodrate.ssenick.fun/
 
-
 # Project Description: Front-End Template Prepared for Vue.js Integration
 ## Overview
 `This project involves the development of a dynamic front-end template optimized for seamless integration with Vue.js. The template is crafted using HTML, SCSS, and JavaScript, with a focus on front-end development principles to ensure an engaging user experience. It encompasses various interactive elements and incorporates third-party JavaScript libraries to enhance functionality. The primary objective is to create a versatile and visually appealing structure that seamlessly integrates with Vue.js components, enabling the rapid development of dynamic web applications.`
